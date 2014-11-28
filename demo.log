@@ -1,0 +1,193 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/W32TeX) (preloaded format=pdflatex 2014.11.27)  28 NOV 2014 06:51
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**demo.tex
+(./demo.tex
+LaTeX2e <2014/05/01>
+Babel <3.9l> and hyphenation patterns for 79 languages loaded.
+(./uclathes.cls
+Document Class: uclathes 2012/05/02, 2.0
+UCLA 2.0 port copyright (C) 2012 by Jose Hales-Garcia.
+Please send bug reports and graduation notices to <jolohaga@me.com>.
+LaTeX2e port copyright (C) 1995 by John Heidemann.
+Copyright (C) 1988 by Richard B. Wales, copyright (C) 1985 by Leslie Lamport.
+(c:/texlive/2014/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+) (./uclathma.clo
+File: uclathma 2012/05/03, 2.0
+)
+(./uclath12.clo
+File: uclath12.clo 2012/05/03, 2.0
+)
+\descriptionmargin=\dimen102
+\c@part=\count79
+\c@chapter=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+ (./uclathti.clo
+File: uclathti 2012/05/03, 2.0
+\c@chairs=\count88
+\c@members=\count89
+\c@vitaitems=\count90
+\c@publications=\count91
+)) (./demo.aux)
+\openout1 = `demo.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 120.
+LaTeX Font Info:    ... okay on input line 120.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 120.
+LaTeX Font Info:    ... okay on input line 120.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 120.
+LaTeX Font Info:    ... okay on input line 120.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 120.
+LaTeX Font Info:    ... okay on input line 120.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 120.
+LaTeX Font Info:    ... okay on input line 120.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 120.
+LaTeX Font Info:    ... okay on input line 120.
+ [0
+
+
+{c:/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 121.
+
+
+(c:/texlive/2014/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 121.
+ [1
+
+] [2
+
+] [3] [4
+
+] [5
+
+]
+(./demo.toc
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 1.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 1.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 1.
+)
+\tf@toc=\write3
+\openout3 = `demo.toc'.
+
+ [6
+
+] (./demo.lof)
+\tf@lof=\write4
+\openout4 = `demo.lof'.
+
+ [7
+
+] (./demo.lot)
+\tf@lot=\write5
+\openout5 = `demo.lot'.
+
+ [8
+
+]
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ™ in font cmr12!
+ [9] [10]
+Overfull \hbox (2.38628pt too wide) in paragraph at lines 121--121
+[]
+ []
+
+
+Overfull \hbox (2.38628pt too wide) in paragraph at lines 121--121
+[]
+ []
+
+
+Overfull \hbox (2.38628pt too wide) in paragraph at lines 121--121
+[]
+ []
+
+
+Overfull \hbox (2.38628pt too wide) in paragraph at lines 121--121
+[]
+ []
+
+
+Overfull \hbox (2.38628pt too wide) in paragraph at lines 121--121
+[]
+ []
+
+
+Overfull \hbox (2.38628pt too wide) in paragraph at lines 121--121
+[]
+ []
+
+
+Overfull \hbox (2.38628pt too wide) in paragraph at lines 121--121
+[]
+ []
+
+
+Overfull \hbox (2.38628pt too wide) in paragraph at lines 121--121
+[]
+ []
+
+
+Overfull \hbox (2.38628pt too wide) in paragraph at lines 121--121
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 121--121
+
+ []
+
+[11
+
+] [12]
+CHAPTER 1.
+
+Overfull \hbox (2.02512pt too wide) in paragraph at lines 140--774
+\OT1/cmr/m/n/12 abed aber-rant aber-ra-tion aber-ra-tions abet abets abet-ted a
+bet-ter abet-ting abeyance
+ []
+
+
+Overfull \hbox (5.68063pt too wide) in paragraph at lines 140--774
+\OT1/cmr/m/n/12 abort-ing abor-tion abor-tion's abor-tions abortive abortively 
+aborts abound abounded
+ []
+
+[1
+
+] [2] [3] (./demo.aux) ) 
+Here is how much of TeX's memory you used:
+ 462 strings out of 493109
+ 4850 string characters out of 6138580
+ 75304 words of memory out of 5000000
+ 3979 multiletter control sequences out of 15000+600000
+ 8848 words of font info for 31 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 23i,10n,17p,860b,175s stack positions out of 5000i,500n,10000p,200000b,80000s
+<c:/texlive/2014/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmbx12.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc
+10.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c
+:/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/
+2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb><c:/texlive/2014/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on demo.pdf (16 pages, 91605 bytes).
+PDF statistics:
+ 80 PDF objects out of 1000 (max. 8388607)
+ 55 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+
