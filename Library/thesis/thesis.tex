@@ -1,0 +1,155 @@
+
+\documentclass [PhD] {uclathes}
+
+\usepackage{amsmath,epsfig,graphics,graphicx,verbatim}
+\usepackage{amsmath,amssymb,array,graphicx,boxedminipage,mathdots,color,epsfig}
+\usepackage{rotating,longtable}
+\usepackage{amsmath,epsfig,graphics,graphicx,verbatim}
+\usepackage{multirow}
+\usepackage{subfigure}
+\usepackage{graphicx}
+\usepackage{units}
+\usepackage{rotating}
+\input{mymacros.tex}           % personal LaTeX macros
+\input{mydefs.tex}             %       same
+\newtheorem{thm}{Theorem}[chapter]
+\newtheorem{cor}[thm]{Corollary}
+\newtheorem{lem}[thm]{Lemma}
+\topmargin 0.5in
+\graphicspath{{./}{./FIGS/}}
+\renewcommand{\topfraction}{.9}
+\renewcommand{\bottomfraction}{.9}
+\renewcommand{\textfraction}{.1}
+
+
+
+% \input {mymacros}                         % personal LaTeX macros
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Usually things live in separate flies.
+%
+% \input {prelim}                           % preliminary page info
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                                                      %
+%                          PRELIMINARY PAGES                           %
+%                                                                      %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\title          {Novel RF Analysis and Design Techniques}
+\author         {Aliakbar Homayoun}
+\department     {Electrical Engineering}
+% Note:  degreeyear should be optional, but as of  5-Feb-96
+% it seems required or you get a year of ``2''.   -johnh
+\degreeyear     {2013}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\acknowledgments {  
+
+I would like to express my gratitude to Professor Behzad Razavi, who is an exemplary advisor in my opinion. He always guided me to the right path in my research. He let me explore things
+that I liked many times during my PhD without feeling pressured. But, when he noticed that I am diverging and will not reach any useful result, he asked me not to
+think on that problem for a while and gave me another problem. He also sometimes pushed me to finish the projects at the right times which was a must to meet the
+deadlines. Other than the technical guidance, he also gave me valuable advice for my life.  
+It is an honor for me to get my PhD under his supervision and words cannot say how grateful I am for that. 
+
+I was fortunate to be in a friendly research group that everybody was willing to help others. I think most of this spirit comes from Professor Razavi himself who wanted us to be so.
+I would like to thank all the members of our group that I had overlap with, namely, Babak, Sameh, ChuanKang, Bibhue, Brian, Sedigheh, Jun, Joung, Wood, Jithin, Marco, Steven, Hegong, Joseph, Long and Abishek. 
+My special thanks go to Marco who helped me a lot to understand various techniques used in frequency synthesizers. He also helped me a lot with Linux.
+I also had useful discussions with Sedigheh, Jun, and Joung during my PhD. 
+
+I had also valuable discussions with some people from other research groups in UCLA, namely, Arash, Alborz, Majid, Farid, Mostafa, Mohsen, and Ata.
+
+I would like to thank Professor Carlo Zaniolo, Professor Frank Chang, and Professor Danijela Cabric for serving on my committee. 
+
+Finally, I would like to thank my family, relatives, and friends for their love, support, and encouragement, no matter how far I am from them. 
+
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chair          {Behzad\ Razavi}
+\member         {Danijela\ Cabric}
+\member         {Mau-Chung Frank\ Chang}
+\member         {Carlo\ Zaniolo}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\dedication     {\textsl{To my parents \ldots }}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\vitaitem   {1984}
+                {Born, Shiraz, Iran.}
+\vitaitem   {2006}
+                {B.S.~(Electrical Engineering), Sharif University of Technology, Tehran, Iran.}
+\vitaitem   {2009}
+                {M.S.~(Electrical Engineering), Sharif University of Technology, Tehran, Iran.}
+\vitaitem   {2013}
+                {Ph.D.~(Electrical Engineering), University of California, Los Angeles, USA.}		
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\publication    {A. Homayoun and B. Razavi, ``Analysis of phase noise in phase/frequency detectors,'' {\em IEEE Trans. Circuits Syst. I, Reg. Papers,} vol 60, no. 3,
+pp. 529--539, Mar. 2013.
+
+\noindent A. Homayoun and B. Razavi, ``Relation between delay line phase noise and ring oscillator phase noise,'' {\em IEEE J. Solid-State Circuits,} vol.
+49, no. 2, Feb. 2014.
+
+\noindent A. Homayoun and B. Razavi, ``A 5-GHz 11.6-mW CMOS receiver for IEEE 802.11a applications,'' presented at the {\em IEEE CICC}, Sep. 2013
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\abstract       {
+
+The design of RF integrated circuits continues to challenge engineers and researchers, demanding new circuit topologies and transceiver
+architectures. New ideas often require new analysis techniques as well, so that the designer can insightfully quantify the underlying
+principles.
+
+This research addresses three problems in RF circuits: (1) analysis of phase noise in phase/frequency detectors (PFDs), an essential component
+in RF synthesizers; (2) analysis of the relation between the phase noise of delay lines and ring oscillators; and (3) design of a new
+low-power RF CMOS receiver for IEEE 802.11a. The first analysis derives equations for the phase noise and shows that an octave increase in the
+input frequency raises the phase noise by 6 dB if flicker noise is dominant and by 3 dB if white noise is dominant. The second analysis
+reveals a simple shaping function and also dispels the commonly-accepted premise that symmetric rise and fall times in a ring oscillator
+suppress the upconversion of flicker noise. The third part deals with the design of a low-power 5-GHz receiver. While advances in the art have
+considerably reduced the power consumption of RF oscillators, frequency dividers, and analog-to-digital converters, the main receiver chain in
+5-GHz systems draws a disproportionately high power, about 46 mW. It is therefore desirable to develop low-power RX front ends and baseband
+filters for WiFi applications. This work introduces a complete 5-GHz CMOS receiver that meets the 11a sensitivity, blocking, and filtering
+requirements while consuming 11.6 mW. This fourfold reduction in power is achieved through the use of a transformer as a low-noise amplifier,
+passive mixers, and non-invasive baseband filtering. A new analysis of passive current-driven mixers sheds light on their properties.}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin {document}
+\makeintropages
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Ordinarily each chapter (at least) is in a separate file.
+%
+\input {ch1}                         % Chapter 1 of dissertation
+\input {ch2}                         % Chapter 2
+\input {ch3}                         % etc.
+\input {ch4}
+\input {ch5}
+%\input {ch6}
+
+
+%\bibliography {bib/network,bib/naming}    % bibliography references
+%\bibliographystyle {thesis}
+
+\bibliographystyle {IEEEtran}
+\bibliography {IEEEfull,thesisBib} 
+
+
+\end {document}
+

@@ -1,4 +1,4 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
 \bibitem{castellini2006laser}
 P~Castellini, M~Martarelli, and EP~Tomasini.
@@ -6,5 +6,91 @@ P~Castellini, M~Martarelli, and EP~Tomasini.
   to technology's needs.
 \newblock {\em Mechanical Systems and Signal Processing}, 20(6):1265--1285,
   2006.
+
+\bibitem{broch1980mechanical}
+Jens~Trampe Broch.
+\newblock {\em Mechanical vibration and shock measurements}.
+\newblock Br{\"u}el \& Kj{\ae}r, 1980.
+
+\bibitem{drain1980laser}
+Leslie~E Drain.
+\newblock The laser doppler techniques.
+\newblock {\em Chichester, Sussex, England and New York, Wiley-Interscience,
+  1980. 250 p.}, 1, 1980.
+
+\bibitem{arnott1990laser}
+W~Patrick Arnott and James~M Sabatier.
+\newblock Laser-doppler vibrometer measurements of acoustic to seismic
+  coupling.
+\newblock {\em Applied Acoustics}, 30(4):279--291, 1990.
+
+\bibitem{goode1996laser}
+Richard~L Goode, Geoffrey Ball, Shinsei Nishihara, and Koshiro Nakamura.
+\newblock Laser doppler vibrometer (ldv).
+\newblock {\em Otology \& Neurotology}, 17(6):813--822, 1996.
+
+\bibitem{huber2001evaluation}
+Alexander~M Huber, Christoph Schwab, Thomas Linder, Sandro~J Stoeckli, Mattia
+  Ferrazzini, Norbert Dillier, and Ugo Fisch.
+\newblock Evaluation of eardrum laser doppler interferometry as a diagnostic
+  tool.
+\newblock {\em The Laryngoscope}, 111(3):501--507, 2001.
+
+\bibitem{conant2002micromachined}
+Robert Conant.
+\newblock {\em Micromachined mirrors}, volume~12.
+\newblock Springer, 2002.
+
+\bibitem{pape1994design}
+Dennis~R Pape, Akis~P Goutzoulis, and Serge{\u\i}~Viktorovich Kulakov.
+\newblock {\em Design and fabrication of acousto-optic devices}.
+\newblock M. Dekker, 1994.
+
+\bibitem{zheng1998multichannel}
+Wanping Zheng, Roman~V Kruzelecky, and Rupak Changkakoti.
+\newblock Multichannel laser vibrometer and its applications.
+\newblock In {\em Third International Conference on Vibration Measurements by
+  Laser Techniques: Advances and Applications}, pages 376--384. International
+  Society for Optics and Photonics, 1998.
+
+\bibitem{fu2010spatially}
+Yu~Fu, Min Guo, and Poh~Boon Phua.
+\newblock Spatially encoded multibeam laser doppler vibrometry using a single
+  photodetector.
+\newblock {\em Optics letters}, 35(9):1356--1358, 2010.
+
+\bibitem{popescu2006optical}
+Gabriel Popescu, Takahiro Ikeda, Keisuke Goda, Catherine~A Best-Popescu,
+  Michael Laposata, Suliana Manley, Ramachandra~R Dasari, Kamran Badizadegan,
+  and Michael~S Feld.
+\newblock Optical measurement of cell membrane tension.
+\newblock {\em Physical review letters}, 97(21):218101, 2006.
+
+\bibitem{goda2009serial}
+K~Goda, KK~Tsia, and B~Jalali.
+\newblock Serial time-encoded amplified imaging for real-time observation of
+  fast dynamic phenomena.
+\newblock {\em Nature}, 458(7242):1145--1149, 2009.
+
+\bibitem{goda2008amplified}
+Keisuke Goda, Kevin~K Tsia, and Bahram Jalali.
+\newblock Amplified dispersive fourier-transform imaging for ultrafast
+  displacement sensing and barcode reading.
+\newblock {\em Applied Physics Letters}, 93(13):131109, 2008.
+
+\bibitem{qian2009real}
+Feng Qian, Qi~Song, En-kuang Tien, Salih~K Kalyoncu, and Ozdal Boyraz.
+\newblock Real-time optical imaging and tracking of micron-sized particles.
+\newblock {\em Optics Communications}, 282(24):4672--4675, 2009.
+
+\bibitem{goda2009theory}
+Keisuke Goda, Daniel~R Solli, Kevin~K Tsia, and Bahram Jalali.
+\newblock Theory of amplified dispersive fourier transformation.
+\newblock {\em Physical Review A}, 80(4):043821, 2009.
+
+\bibitem{tsia2010performance}
+Kevin~K Tsia, Keisuke Goda, Dale Capewell, and Bahram Jalali.
+\newblock Performance of serial time-encoded amplified microscope.
+\newblock {\em Optics express}, 18(10):10016--10028, 2010.
 
 \end{thebibliography}

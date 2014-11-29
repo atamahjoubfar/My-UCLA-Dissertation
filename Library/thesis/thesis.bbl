@@ -1,0 +1,128 @@
+\begin{thebibliography}{10}
+\providecommand{\url}[1]{#1}
+\csname url@rmstyle\endcsname
+\providecommand{\newblock}{\relax}
+\providecommand{\bibinfo}[2]{#2}
+\providecommand\BIBentrySTDinterwordspacing{\spaceskip=0pt\relax}
+\providecommand\BIBentryALTinterwordstretchfactor{4}
+\providecommand\BIBentryALTinterwordspacing{\spaceskip=\fontdimen2\font plus
+\BIBentryALTinterwordstretchfactor\fontdimen3\font minus
+  \fontdimen4\font\relax}
+\providecommand\BIBforeignlanguage[2]{{%
+\expandafter\ifx\csname l@#1\endcsname\relax
+\typeout{** WARNING: IEEEtran.bst: No hyphenation pattern has been}%
+\typeout{** loaded for the language `#1'. Using the pattern for}%
+\typeout{** the default language instead.}%
+\else
+\language=\csname l@#1\endcsname
+\fi
+#2}}
+
+\bibitem{Tsutsumi} K. Tsutsumi et al., ``Low Phase noise Ku-band PLL-IC with -104.5dBc/Hz at 10kHz offset using SiGe HBT ECL PFD,''
+{\em Asia Pacific Microwave Conference,} pp. 373--376, Dec. 2009.
+
+\bibitem{Arora} H. Arora et al., ``Enhanced phase noise modeling of fractional-N frequency synthesizers,''  {\em IEEE Trans.
+Circuits Syst. I, Reg. Papers,}  vol. 52,  pp. 379--395 , 2005.
+
+\bibitem{Wilson} M.P. Wilson and T.C. Tozer, ``Synthesisers for low data-rate satellite receivers,'' {\em Proc. 2nd Int. Conf. on Frequency Control and
+Synthesis}, Leicester, 10th-13th April 1989, {\em IEE Conf. Publ. 303,} pp. 73--78.
+
+\bibitem{Chen} Z. Chen and F.F. Dai, ``Effects of LO phase and amplitude imbalances and phase noise on M-QAM transceiver
+performance,'' {\em Circuits and Systems, IEEE International Symposium on}, pp.197--200, May 2009.
+
+\bibitem{Brennan} P. V. Brennan and I. Thompson, ``Phase/frequency detector phase noise contribution in PLL frequency synthesiser,'' {\em Electron. Lett.,} vol. 37,
+no. 15, pp. 939--940, 2001.
+
+\bibitem{Thompson} I. Thompson and P. V. Brennan, ``Phase noise contribution of the phase/frequency detector in a digital PLL frequency synthesiser,'' {\em
+Circuits, Devices and Systems, IEE Proceedings - }, vol. 150, no. 1, pp. 1--5, Feb 2003.
+
+\bibitem{Abidi} A. Abidi, ``Phase noise and jitter in CMOS ring oscillators,''
+{\em IEEE J. Solid-State Circuits,} vol. 41, no. 8, pp. 1803--1816, Aug. 2006.
+
+\bibitem{tspcpfd} W.-H. Lee, J. -D Cho, and S. -D Lee, ``A high speed and low power phase-frequency detector and charge-pump,'' in {\em Proc. Asia and South
+Pacific Design Automation Conf.}, pp. 269--272, Jan. 1999.
+
+\bibitem{Rice} S. O. Rice, ``Mathematical analysis of random noise,'' {\em Bell Systems Technical Journal}, Vol. 23, 1944.
+
+
+
+
+
+\bibitem{Sonntag} J. Sonntag and R. Leonowich, ``A monolithic CMOS 10 MHz DPLL for burst-mode data retiming,'' {\em IEEE ISSCC Dig. Tech. Papers,} 1990,
+pp. 194--195.
+
+\bibitem{Weigandt} T. C. Weigandt, B. Kim, and P. R. Gray, ``Analysis of Timing Jitter in CMOS Ring Oscillators'', {\em ISCAS} 1994, pp. 27--30.
+
+\bibitem{Mcneill} J. A. McNeill, ``Jitter in ring oscillators,'' {\em IEEE J. Solid-State Circuits,} vol. 32, no. 6, pp. 870--879, Jun. 1997.
+
+\bibitem{Hajimiri} A. Hajimiri, S. Limotyrakis, and T.H. Lee, ``Jitter and phase noise in ring oscillators,'' {\em IEEE J. Solid-State Circuits,} vol. 34, no.
+6, pp. 790--804, Jun. 1999.
+
+\bibitem{Leung} B. H. Leung and D. Mcleish, ``Investigation of phase noise of ring oscillators
+with time varying current and noise sources by time scaling thermal noise,'' {\em IEEE Trans. Circuits Syst. I, Reg. Papers,} vol 51, no. 10, pp.1926--1939, Oct. 2004.
+
+\bibitem{Cronin} T. Cronin, D. Pepe, and D. Zito, ``Complements on phase noise analysis and design of CMOS ring oscillators,'' {\em Electronics, Circuits and Systems
+(ICECS), 2012 19th IEEE International Conference on}, Dec. 9-12, 2012, pp.793--796.
+
+\bibitem{Dai}  L. Dai and R. Harjani, ``Design of low-phase-noise CMOS ring oscillators,'' {\em IEEE Trans. Circuits Syst. II, Analog Digit. Signal Process,} vol. 49, no. 5, pp.
+328--38, May 2002.
+
+\bibitem{Razavi} B. Razavi, ``A study of phase noise in CMOS oscillators,'' {\em IEEE J. Solid-State Circuits,} vol. 31, no. 3, pp. 331--343, Mar. 1996.
+
+\bibitem{Grozing} M. Grozing and M. Berroth,``Derivation of single-ended CMOS inverter ring oscillator close-in phase noise from basic circuit and device properties'', in {\em Proc.
+IEEE Radio Frequency Integr. Circuits Symp.}, Jun. 6--8, 2004, pp. 277--280.
+
+\bibitem{Perrott} M. H. Perrott, M. D. Trott, and C. G. Sodini, ``A modeling approach for $\Sigma-\Delta$ fractional-N frequency synthesizers allowing straightforward noise
+analysis'', {\em IEEE J. Solid-State Circuits,} vol. 37, no. 8, pp. 1028--1038, Aug. 2002
+
+\bibitem{Galton} I. Galton, ``Delta-sigma fractional-N phase-locked loops,'' in {\em Phase-Locking in High-Performance Systems:From Devices to Architectures,} Wiley-IEEE Press, 2003, pp. 23--33.
+
+\bibitem{Homayoun} A. Homayoun and B. Razavi, ``Analysis of phase noise in phase/frequency detectors,'' {\em IEEE Trans. Circuits Syst. I, Reg. Papers,} vol 60, no. 3,
+pp. 529--539, Mar. 2013.
+
+\bibitem{digitalbook} D. A. Hodges, H. G. Jackson, and R. A. Saleh, {\em Analysis and Design of Digital Integrated Circuits in Deep Submicron Technology,} McGraw-Hill, 3rd edition, 2004.
+pp. 251--253.
+
+
+
+
+
+\bibitem{Kan} L. L. L. Kan et al., ``A 1-V 86-mW RX 53-mW TX single-chip CMOS transceiver for WLAN IEEE 802.11a,'' {\em IEEE J. Solid-State Circuits,} 
+vol. 42, no. 9, pp. 1986--1998, Sep. 2007.
+
+\bibitem{Zolfaghari} A. Zolfaghari and B. Razavi, ``A low-power 2.4-GHz transmitter/receiver CMOS IC,'' {\em IEEE J. Solid-State Circuits,} vol. 38,
+no. 2, pp. 176--183, Feb. 2003.
+
+\bibitem{Zolfaghari2} A. Zolfaghari, A. Chan, and B. Razavi, ``Stacked inductors and transformers in CMOS technology,'' {\em IEEE J. Solid-State Circuits,} vol.
+36, no. 4, pp. 620--628, Apr. 2001.
+
+\bibitem{Long} J. R. Long, ``Monolithic transformers for silicon RF IC design,'' {\em IEEE J. Solid-State Circuits,} vol.
+35, no. 9, pp. 1368--1383, Sept. 2000.
+
+\bibitem{Nauta} M. Soer, et al., ``A 0.2-to-2.0GHz 65nm CMOS receiver without LNA achieving $>$11dBm IIP3 and $<$6.5 dB NF,'' {\em ISSCC Dig.
+of Tech. Papers,} pp. 222--223, Feb. 2009.
+
+\bibitem{Kaczman} D. Kaczman, et al., ``A single-chip 10-band WCDMA/HSDPA 4-band GSM/EDGE SAW-less CMOS receiver with DigRF 3G interface
+and +90 dBm IIP2,'' {\em IEEE J. Solid-State Circuits,} vol. 44, no. 3, pp. 718--739, Mar. 2009.
+
+\bibitem{Blaakmeer} S. C. Blaakmeer, et al., ``The BLIXER, a wideband balun-LNA-I/Q-mixer topology,'' {\em IEEE J. Solid-State Circuits,} vol. 43,
+no. 12, pp. 2706--2715, Dec. 2008.
+
+\bibitem{Mirzaei} A. Mirzaei and H. Darabi, ``Analysis of imperfections on performance of 4-phase passive-mixer-based high-Q bandpass filters in SAW-less
+receivers,'' {\em IEEE Trans. Circuits Syst. I, Reg. Papers,} vol 58, no. 5, pp. 879--892, May 2011.
+
+\bibitem{Andrews} C. Andrews and A. C. Molnar, ``A passive mixer-first receiver with digitally controlled and widely tunable RF interface,'' {\em
+IEEE J. Solid-State Circuits,} vol 45, no. 12, pp. 2696--2708, Dec. 2010. 
+
+\bibitem{Maeda} T. Maeda et al., ``Low-power-consumption direct-conversion CMOS transceiver for multi-standard 5-GHz wireless LAN systems with channel
+bandwidths of 5-20 MHz,'' {\em IEEE J. Solid-State Circuits,} 
+vol. 41, no. 2, pp. 375--383, Feb. 2006.
+
+\bibitem{Lim} K. Lim et al., ``A 2x2 MIMO tri-band dual-mode direct-conversion CMOS transceiver for worldwide WiMAX/WLAN applications,'' {\em IEEE J. Solid-State
+Circuits,} vol. 46, no. 7, pp. 1648--1658, Jul. 2011.
+
+
+
+
+
+\end{thebibliography}

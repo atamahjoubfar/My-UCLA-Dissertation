@@ -1,0 +1,258 @@
+\begin{thebibliography}{10}
+\providecommand{\url}[1]{#1}
+\csname url@rmstyle\endcsname
+\providecommand{\newblock}{\relax}
+\providecommand{\bibinfo}[2]{#2}
+\providecommand\BIBentrySTDinterwordspacing{\spaceskip=0pt\relax}
+\providecommand\BIBentryALTinterwordstretchfactor{4}
+\providecommand\BIBentryALTinterwordspacing{\spaceskip=\fontdimen2\font plus
+\BIBentryALTinterwordstretchfactor\fontdimen3\font minus
+  \fontdimen4\font\relax}
+\providecommand\BIBforeignlanguage[2]{{%
+\expandafter\ifx\csname l@#1\endcsname\relax
+\typeout{** WARNING: IEEEtran.bst: No hyphenation pattern has been}%
+\typeout{** loaded for the language `#1'. Using the pattern for}%
+\typeout{** the default language instead.}%
+\else
+\language=\csname l@#1\endcsname
+\fi
+#2}}
+
+\bibitem{Tsutsumi} K. Tsutsumi et al., ``Low Phase noise Ku-band PLL-IC with -104.5dBc/Hz at 10kHz offset using SiGe HBT ECL PFD,''
+{\em Asia Pacific Microwave Conference,} pp. 373--376, Dec. 2009.
+
+\bibitem{Arora} H. Arora et al., ``Enhanced phase noise modeling of fractional-N frequency synthesizers,''  {\em IEEE Trans.
+Circuits Syst. I, Reg. Papers,}  vol. 52,  pp. 379--395 , 2005.
+
+\bibitem{Wilson} M.P. Wilson and T.C. Tozer, ``Synthesisers for low data-rate satellite receivers,'' {\em Proc. 2nd Int. Conf. on Frequency Control and
+Synthesis}, Leicester, 10th-13th April 1989, {\em IEE Conf. Publ. 303,} pp. 73--78.
+
+\bibitem{Chen} Z. Chen and F.F. Dai, ``Effects of LO phase and amplitude imbalances and phase noise on M-QAM transceiver
+performance,'' {\em Circuits and Systems, IEEE International Symposium on}, pp.197--200, May 2009.
+
+\bibitem{Brennan} P. V. Brennan and I. Thompson, ``Phase/frequency detector phase noise contribution in PLL frequency synthesiser,'' {\em Electron. Lett.,} vol. 37,
+no. 15, pp. 939--940, 2001.
+
+\bibitem{Thompson} I. Thompson and P. V. Brennan, ``Phase noise contribution of the phase/frequency detector in a digital PLL frequency synthesiser,'' {\em
+Circuits, Devices and Systems, IEE Proceedings - }, vol. 150, no. 1, pp. 1--5, Feb 2003.
+
+\bibitem{Abidi} A. Abidi, ``Phase noise and jitter in CMOS ring oscillators,''
+{\em IEEE J. Solid-State Circuits,} vol. 41, no. 8, pp. 1803--1816, Aug. 2006.
+
+\bibitem{tspcpfd} W.-H. Lee, J. -D Cho, and S. -D Lee, ``A high speed and low power phase-frequency detector and charge-pump,'' in {\em Proc. Asia and South
+Pacific Design Automation Conf.}, pp. 269--272, Jan. 1999.
+
+\bibitem{Rice} S. O. Rice, ``Mathematical analysis of random noise,'' {\em Bell Systems Technical Journal}, Vol. 23, 1944.
+
+
+
+
+
+\bibitem{Sonntag} J. Sonntag and R. Leonowich, ``A monolithic CMOS 10 MHz DPLL for burst-mode data retiming,'' {\em IEEE ISSCC Dig. Tech. Papers,} 1990,
+pp. 194--195.
+
+\bibitem{Weigandt} T. C. Weigandt, B. Kim, and P. R. Gray, ``Analysis of Timing Jitter in CMOS Ring Oscillators'', {\em ISCAS} 1994, pp. 27--30.
+
+\bibitem{Mcneill} J. A. McNeill, ``Jitter in ring oscillators,'' {\em IEEE J. Solid-State Circuits,} vol. 32, no. 6, pp. 870--879, Jun. 1997.
+
+\bibitem{Abidi} A. Abidi, ``Phase noise and jitter in CMOS ring oscillators,'' {\em IEEE J. Solid-State Circuits,} vol. 41, no. 8, pp. 1803--1816, Aug. 2006.
+
+\bibitem{Hajimiri} A. Hajimiri, S. Limotyrakis, and T.H. Lee, ``Jitter and phase noise in ring oscillators,'' {\em IEEE J. Solid-State Circuits,} vol. 34, no.
+6, pp. 790--804, Jun. 1999.
+
+\bibitem{Leung} B. H. Leung and D. Mcleish, ``Investigation of phase noise of ring oscillators
+with time varying current and noise sources by time scaling thermal noise,'' {\em IEEE Trans. Circuits Syst. I, Reg. Papers,} vol 51, no. 10, pp.1926--1939, Oct. 2004.
+
+\bibitem{Cronin} T. Cronin, D. Pepe, and D. Zito, ``Complements on phase noise analysis and design of CMOS ring oscillators,'' {\em Electronics, Circuits and Systems
+(ICECS), 2012 19th IEEE International Conference on}, Dec. 9-12, 2012, pp.793--796.
+
+\bibitem{Dai}  L. Dai and R. Harjani, ``Design of low-phase-noise CMOS ring oscillators,'' {\em IEEE Trans. Circuits Syst. II, Analog Digit. Signal Process,} vol. 49, no. 5, pp.
+328--38, May 2002.
+
+\bibitem{Razavi} B. Razavi, ``A study of phase noise in CMOS oscillators,'' {\em IEEE J. Solid-State Circuits,} vol. 31, no. 3, pp. 331--343, Mar. 1996.
+
+\bibitem{Grozing} M. Grozing and M. Berroth,``Derivation of single-ended CMOS inverter ring oscillator close-in phase noise from basic circuit and device properties'', in {\em Proc.
+IEEE Radio Frequency Integr. Circuits Symp.}, Jun. 6--8, 2004, pp. 277--280.
+
+\bibitem{Perrott} M. H. Perrott, M. D. Trott, and C. G. Sodini, ``A modeling approach for $\Sigma-\Delta$ fractional-N frequency synthesizers allowing straightforward noise
+analysis'', {\em IEEE J. Solid-State Circuits,} vol. 37, no. 8, pp. 1028--1038, Aug. 2002
+
+\bibitem{Galton} I. Galton, ``Delta-sigma fractional-N phase-locked loops,'' in {\em Phase-Locking in High-Performance Systems:From Devices to Architectures,} Wiley-IEEE Press, 2003, pp. 23--33.
+
+\bibitem{Homayoun} A. Homayoun and B. Razavi, ``Analysis of phase noise in phase/frequency detectors,'' {\em IEEE Trans. Circuits Syst. I, Reg. Papers,} vol 60, no. 3,
+pp. 529--539, Mar. 2013.
+
+\bibitem{digitalbook} D. A. Hodges, H. G. Jackson, and R. A. Saleh, {\em Analysis and Design of Digital Integrated Circuits in Deep Submicron Technology,} McGraw-Hill, 3rd edition, 2004.
+pp. 251--253.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\bibitem{centerpower}
+U.~S. {D}epartment of~{E}nergy (DOE) and U.~S. {E}nvironmental
+  {P}rotection~{A}gency (EPA), ``{F}act {S}heet on {N}ational {D}ata {C}enter
+  {E}nergy {E}fficiency {I}nformation {P}rogram,'' in
+  http://www.energystar.gov/ia/partners/prod\_development/downloads/NDC
+  FactSheet\_Short.pdf, Mar. 2008.
+
+\bibitem{futureio}
+F.~{O'M}ahony~et al, ``{T}he {F}uture of {E}lectrical {I/O} for
+  {M}icroprocessors,'' \emph{IEEE VLSI DAT}, Apr. 2009.
+
+\bibitem{100Gback}
+``{IEEE} {P}802.bj 100-{G}b/s {B}ackplane and {C}opper {C}able {T}ask
+  {F}orce,'' in http://www.ieee802.org/3/bj.
+
+\bibitem{bicmos1}
+P.~J. Lim and B.~A. Wooley, ``{A}n {8}-bit {2}00-{MH}z {B}i{CMOS}
+  {C}omparators,'' \emph{IEEE Journal of Solid-State Circuits}, Feb. 1990.
+
+\bibitem{bicmos2}
+B.~Razavi and B.~A. Wooley, ``{D}esign {T}echniques for {H}igh-{S}peed,
+  {H}igh-{R}esolution {C}omparators,'' \emph{IEEE Journal of Solid-State
+  Circuits}, Dec. 1992.
+
+\bibitem{razavibook}
+B.~Razavi, \emph{{D}esign of {A}nalog {CMOS} {I}ntegrated {C}ircuits}.\hskip
+  1em plus 0.5em minus 0.4em\relax McGraw-Hill, 2001.
+
+\bibitem{Sameh}
+S.~Ibrahim and B.~Razavi, ``{L}ow-{P}ower {CMOS} {E}qualizer {D}esign for
+  20-{G}b/s {S}ystems,'' \emph{IEEE Journal of Solid-State Circuits}, Jun.
+  2011.
+
+\bibitem{pll_based}
+J.~C. {S}cheytt~et al, ``{A} 0.155-, -.622, and 2.488-{G}b/s {A}utomatic
+  {B}it-{R}ate {S}electing {C}lock and {D}ata {R}ecovery {IC} for {B}it-{R}ate
+  {T}ransparent {SDH} {S}ystems,'' \emph{IEEE Journal of Solid-State Circuits},
+  Dec. 2003.
+
+\bibitem{dll_based}
+X.~{M}aillard~et al, ``{A} 900-{M}b/s {CMOS} {D}ata {R}ecovery {DLL} {U}sing
+  {H}alf {F}requency {C}lock,'' \emph{IEEE Journal of Solid-State Circuits},
+  Dec. 2002.
+
+\bibitem{PI_based}
+R.~{K}reienkamp~et al, ``{A} 10-{G}b/s {CMOS} {C}lock and {D}ata {R}ecovery
+  {C}ircuit with an {A}nalog {P}hase {I}nterpolator,'' \emph{IEEE Journal of
+  Solid-State Circuits}, Mar. 2005.
+
+\bibitem{IL_based}
+H.-T. {N}g~et al, ``{A} {S}econd-{O}rder {S}emi {D}igital {C}lock {R}ecovery
+  {C}ircuit {B}ased on {I}njection {L}ocking,'' \emph{IEEE Journal of
+  Solid-State Circuits}, Dec. 2003.
+
+\bibitem{OS_based}
+M.~{I}erssel~et al, ``{A} 3.2-{G}b/s {CDR} {U}sing {S}emi-{B}lind
+  {O}versampling to {A}chieve {H}igh {J}itter {T}olerance,'' \emph{IEEE Journal
+  of Solid-State Circuits}, Oct. 2007.
+
+\bibitem{hogge}
+C.~R. {H}ogge, ``{A} {S}elf-{C}orrecting {C}lock {R}ecovery {C}ircuit,''
+  \emph{IEEE J. Lightwave Tech.}, Dec. 1985.
+
+\bibitem{alexander}
+A.~D.~H. {A}lexander, ``{C}lock {R}ecovery from {R}andom {B}inary {D}ata,''
+  \emph{Electronics Letters}, Oct. 1975.
+
+\bibitem{razavirf}
+B.~Razavi, \emph{{RF} {M}icroelectronics}.\hskip 1em plus 0.5em minus
+  0.4em\relax Prentice Hall, 2011.
+
+\bibitem{halfpd}
+J.~Savoj and B.~Razavi, ``{A} 10-{G}b/s {CMOS} {C}lock and {D}ata {R}ecovery
+  {C}ircuit with a {H}alf-{R}ate {L}inear {P}hase {D}etector,'' \emph{IEEE
+  Journal of Solid-State Circuits}, May. 2001.
+
+\bibitem{quarterpd}
+J.~Lee and B.~Razavi, ``{A} 40-{G}b/s {C}lock and {D}ata {R}ecovery {C}ircuit
+  in 0.18-um {CMOS} {T}echnology,'' \emph{IEEE Journal of Solid-State
+  Circuits}, Dec. 2003.
+
+\bibitem{XOR_ref}
+B.~{R}azavi~et al, ``{D}esign {T}echnique for {L}ow-{V}oltage {H}igh-{S}peed
+  {D}igital {B}ipolar {C}ircuits,'' \emph{IEEE Journal of Solid-State
+  Circuits}, Mar. 1994.
+
+\bibitem{jrithesis}
+J.~Lee, ``{D}esign and {M}odeling of {H}igh-{S}peed {C}lock and {D}ata
+  {R}ecovery {C}ircuits,'' Ph.D. dissertation, University of California, Los
+  Angeles, 2003.
+
+\bibitem{40Gdmux}
+D.~{K}ehrer~et al, ``40-{G}b/s 2:1 {M}ultiplexer and 1:2 {D}emultiplexer in
+  120-nm {S}tandard {CMOS},'' \emph{IEEE Journal of Solid-State Circuits}, Nov.
+  2003.
+
+\bibitem{10Gdmux}
+A.~{T}anabe~et al, ``{A} {R}edundent {M}ulti-{V}alued {L}ogic for 10{G}b/s
+  {CMOS} {D}emultiplexer {IC},'' \emph{IEEE Int. Solid-State Circuits (ISSCC)
+  Dig. Tech. Papers}, Feb. 2001.
+
+\bibitem{11Gdmux}
+A.~B. {K}im and S.~H. Ahn, ``{A} 11{G}b/s {CMOS} {D}emultiplexer using
+  {R}edundent {M}ulti-{V}alued {L}ogic,'' \emph{IEEE ICECS}, 2006.
+
+\bibitem{rzdmux}
+J.~Savoj and B.~Razavi, ``{A} {CMOS} {I}nterface {C}ircuit for {D}etection of
+  1.2{G}b/s {RZ} {D}ata,'' \emph{IEEE Int. Solid-State Circuits (ISSCC) Dig.
+  Tech. Papers}, Feb. 1999.
+
+\bibitem{StrongARM}
+D.~W. Dobberpuhl, ``{C}ircuit and technology for {D}igital's {S}trong{ARM} and
+  {ALPHA} microprocessors [{CMOS} technology],'' \emph{17th IEEE Conf. Advanced
+  Research in VLSI}, Mar. 1997.
+
+\bibitem{Wang}
+Y.~T. Wang and B.~Razavi, ``{A}n 8-{B}it 150-{MH}z {CMOS} {A/D} {C}onverter,''
+  \emph{IEEE Journal of Solid-State Circuits}, Mar. 2000.
+
+\bibitem{Andreani}
+P.~A. et~al, ``{A} {S}tudy of {P}hase {N}oise in {C}olpitts and {LC}-{T}ank
+  {O}scillators,'' \emph{IEEE Journal of Solid-State Circuits}, May. 2005.
+
+\bibitem{Mazzanti}
+A.~Mazzanti and P.~Andreani, ``{C}lass-{C} {H}armonic {CMOS} {VCO}s, with a
+  {G}eneral {R}esult on {P}hase {N}oise,'' \emph{IEEE Journal of Solid-State
+  Circuits}, Dec. 2008.
+
+\bibitem{andreani_lcvco}
+P.~{A}ndreani~et al, ``{M}ore on the 1/$f^2$ {P}hase {N}oise {P}erformance of
+  {CMOS} {D}ifferential-{P}air {LC}-{T}ank {O}scillators,'' \emph{IEEE Journal
+  of Solid-State Circuits}, Dec. 2006.
+
+\bibitem{isscc12liscidini}
+A.~{L}iscidini~et al, ``{A} 36m{W}/9m{W} {P}ower-{S}calable {DCO} in 55nm
+  {CMOS} for {GSM}/{WCDMA} {F}requency {S}ynthesizers,'' \emph{IEEE Int.
+  Solid-State Circuits (ISSCC) Dig. Tech. Papers}, Feb. 2012.
+
+\bibitem{razavioptical}
+B.~Razavi, \emph{{D}esign of {I}ntegrated {C}ircuits for {O}ptical
+  {C}ommunications}.\hskip 1em plus 0.5em minus 0.4em\relax McGraw-Hill, 2003.
+
+\bibitem{25gcdr1}
+C.~{K}romer~et al, ``{A} 25-{G}b/s {CDR} in 90-nm {CMOS} for {H}igh-{D}ensity
+  {I}nterconnects,'' \emph{IEEE Journal of Solid-State Circuits}, Dec. 2006.
+
+\bibitem{25gcdr2}
+K.~Yu and J.~Lee, ``{A} 2 $\times$ 25-{G}b/s {R}eceiver with 2:5 {DMUX} for
+  100-{G}b/s {E}thernet,'' \emph{IEEE Journal of Solid-State Circuits}, Nov.
+  2010.
+
+\end{thebibliography}

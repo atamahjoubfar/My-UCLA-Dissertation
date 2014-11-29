@@ -1,0 +1,794 @@
+\begin{center}
+{\Large \bf A 5-GHz 11.6-mW CMOS Receiver for IEEE 802.11a Applications}                        
+                \vskip.2in
+{Aliakbar Homayoun and Behzad Razavi}\\
+{Electrical Engineering Department}\\
+\vspace{0pt}
+{University of California, Los Angeles}\\
+\end{center}
+
+\noindent
+\parbox{3.5in}{\begin{flushleft}
+{\underline{Correspondence Address}:}\\
+{Behzad Razavi}\\
+{56-147D, EIV}\\
+{Electrical Engineering Department}\\
+{University of California}\\
+{Los Angeles, CA 90095-1594}\\
+{Phone:  (310) 206-1633} \\
+{Fax: (310) 206-8495}\\
+{e-mail:  razavi@ee.ucla.edu}\\
+\end{flushleft}} \hfill
+
+%\usepackage{color}
+%\usepackage{graphicx}
+
+\begin{center}
+\vspace{0.3in}
+{\large \bf Abstract}
+\end{center}
+{\bf 
+Keywords: }
+
+
+%\pagebreak
+
+
+
+
+\section{Introduction}
+% The very first letter is a 2 line initial drop letter followed
+% by the rest of the first word in caps.
+% 
+% form to use if the first word consists of a single letter:
+% \IEEEPARstart{A}{demo} file is ....
+% 
+% form to use if you need the single drop letter followed by
+% normal text (unknown if ever used by IEEE):
+% \IEEEPARstart{A}{}demo file is ....
+% 
+% Some journals put the first two words in caps:
+% \IEEEPARstart{T}{his demo} file is ....
+% 
+% Here we have the typical use of a "T" for an initial drop letter
+% and "HIS" in caps to complete the first word.
+
+In today's mobile devices, the WiFi transceiver still consumes a relatively large amount of power. 
+The receiver power is substantial due to the greater on-time of the receiver compared to the transmitter.
+Figure \ref{genericRX} shows a generic receiver system for 802.11a. 
+\begin{figure}[htb]
+\vspace{1.3in}
+\caption{Generic 802.11a Receiver.}
+\special{psfile=FIGS/genericRX hoffset=-50 voffset=15 vscale=82 hscale=82}
+\label{genericRX}
+\end{figure}
+While advances in the art have considerably reduced the power consumption of analog-to-digital converters and frequency synthesizers, the main
+receiver (RX) chain draws disproportionately high power. For example, we can now realize each ADC in Fig. \ref{genericRX} with about 3 mW of power and
+the frequency synthesizer with about 5 mW. On the other hand, the receive path itself draws more than 45 mW \cite{Kan}. It is therefore desirable to
+develop low-power RX front ends and baseband filters for WiFi applications. 
+
+This paper introduces a complete 5-GHz CMOS receiver that meets the 11a sensitivity, blocking, and filtering requirements while consuming 11.6 mW.
+This fourfold reduction in power is achieved through the use of a transformer as a low-noise amplifier (LNA), passive mixers, and ``non-invasive''
+baseband filtering \cite{Zolfaghari}.
+
+Section II elaborates on the design of the transformer and Section III introduces the receiver architecture.
+Section IV analyzes the current-driven passive mixers in a general form which is used in Section V to design the mixers connected to the transformer. 
+Section VI describes the baseband channel-select filters and Section VII presents the experimental results.
+
+
+ 
+\section{Transformers as LNAs}
+In the generic receiver of Fig. \ref{genericRX}, the low-noise amplifier (LNA) provides voltage gain and proper input matching, but dissipates
+considerable amount of power. In order to realize a low-power receiver, we wish to remove the LNA or at least its power consumption. This becomes
+possible if a passive device with zero power consumption can serve as an LNA. A 1-to-N on-chip transformer provides voltage gain at the cost of power
+loss and noise figure degradation. It can also provide input matching as will be explained later. Thus, it seems that a transformer is a viable
+substitute for the LNA. However, its design is not straightforward. The principal point is to achieve a high voltage gain with low power loss at the
+frequency of interest. In particular, we would like to obtain a high coupling factor between the primary and the secondary. 
+\begin{figure}[htb]
+\vspace{4.6in}
+\caption{Various transformer topologies.}
+\special{psfile=FIGS/Transformer_topologies hoffset=-50 voffset=15 vscale=82 hscale=82}
+\label{Transformer_topologies}
+\end{figure}
+Consider the stacked structure \cite{Zolfaghari2} shown in Fig. \ref{Transformer_topologies}(a) where spirals in high and low metal layers form the
+secondary and one spiral in middle metal layer forms the primary. This structure has a high coupling factor but, the high capacitance between the
+layers and the loss of the lower metal layers limit the performance. Note that the capacitance here sustains a larger voltage difference than in a
+planar structure \cite{Long} shown in Fig. \ref{Transformer_topologies}(b). The self-resonance frequency and conductivity of the planar topology is
+much higher, but the coupling between the primary and the inner turns of the secondary is quite low. The optimum topology is shown in Fig.
+\ref{Transformer_topologies}(c) where a one-turn primary is stacked in the middle of the secondary. It is expected to have reasonable coupling, low
+loss, and small capacitance to be able to work at 5-GHz band. To reduce the loss, an octagonal shape has been used as shown in Fig.
+\ref{transformer}, with a one-turn primary in metal 8 and a six-turn secondary in metal 9.
+\begin{figure}[htb]
+\vspace{2.3in}
+\special{psfile=FIGS/Transformer2D.eps hoffset=30 voffset=10 vscale=52 hscale=52}
+\caption{Transformer geometry.}
+\special{psfile=FIGS/Transformertext hoffset=-50 voffset=15 vscale=82 hscale=82}
+\label{transformer}
+\end{figure}
+The outer diameters of the primary and the secondary are 146 $\mu$m and 170 $\mu$m, respectively. The two thick metal layers have been used to
+minimize the loss. Since the secondary has already much more parasitics than the primary, it uses the top metal to minimize the capacitance to the
+substrate. The number of turns, diameter, and metal widths are chosen to provide maximum voltage gain with acceptable loss at the desired
+frequency. If we increase the number of secondary turns, the voltage gain grows slowly because the new turns are farther from the primary, but the
+capacitance and loss increase significantly. Also, a higher number of turns reduces the transformer input resistance.  According to HFSS
+simulations, the above transformer has an insertion loss of 2.4 dB at 5.5 GHz, an unloaded voltage gain of 13.4 dB, and an unloaded input resistance
+of 87 $\Omega$. With a matched load connected to the secondary, the voltage gain and input resistance drop to 12 dB and 44 $\Omega$, respectively. We then
+need to understand how the transformer performs when it is connected to the following block, namely mixers. 
+
+
+
+\section{Receiver Architecture}
+Figure \ref{architecture} shows the overall receiver architecture. 
+\begin{figure}[htb]
+\vspace{3.5in}
+\caption{Receiver architecture.}
+\special{psfile=FIGS/Architecture_corrected hoffset=-50 voffset=15 vscale=82 hscale=82}
+\label{architecture}
+\end{figure}
+The transformer described in the previous section serves as the LNA and single-ended to differential converter at the input and drives two sets of
+passive mixers with 25\% duty cycle LOs. The downconverted baseband signals are then applied to 4-th order elliptic filters for channel selection. A
+side-benefit is that the transformer also provides ESD protection. The LO frequency arrives at twice the carrier frequency and is divided by two to
+generate quadrature phases. We then have some logic to produce the 25\% LO waveforms.
+
+We should highlight two advantages of our approach over the LNA-less receiver in \cite{Nauta}. First, the input matching inherent in our receiver
+provides a robust interface with the antenna in the presence of long external traces. Second, our front end has much less power consumption.
+
+There are three important questions that we need to address. First, how do the transformer and mixers provide input matching? Second, What is the
+conversion gain of the mixers? It seems that the current is integrated in the load capacitor, $C_1$. In that case, the trans-impedance conversion gain
+will not be flat across the channel bandwidth. Finally, how should we calculate the noise figure?
+To answer these three important questions, a new analysis technique is required. We will study the input impedance, conversion gain and noise figure
+and see why the trans-impedance conversion gain is flat across the channel.
+
+By virtue of its high turns ratio, the transformer in Fig. \ref{architecture} exhibits a relatively high output impedance, approximating a current
+source. The switches can therefore be viewed as current-driven mixers, thus contributing less noise than voltage-driven topologies \cite{Kaczman}.
+Moreover, for the sake of analysis, since a capacitor is a good {\em keeper} of voltage, it is difficult to assume voltage excitations.
+
+
+
+
+\section{Analysis of Current-Driven Passive Mixers} 
+
+The 25\% duty cycle passive mixers have been used extensively since 2008 \cite{Blaakmeer}. But, their input impedance, conversion gain, and noise
+figure have not been formulated accurately \cite{Mirzaei}-\cite{Andrews}. This section proposes an accurate analysis that helps the designer to insightfully
+quantify the underlying principles. The method can be extended to other LO schemes as well.
+\begin{figure}[htb]
+\vspace{2.5in}
+\special{psfile=FIGS/IQMixer hoffset=-50 voffset=0 vscale=82 hscale=82}
+\caption{Current-driven passive mixer.}
+\label{IQMixer}
+\end{figure}
+Figure \ref{IQMixer} shows the current-driven quadrature passive mixers with a source impedance $Z_s$. The circuit has
+been redrawn in Fig. \ref{IQMixer2} for convenience where the LO waveforms controlling the switches, $S_1$--$S_4$, are also shown.
+\begin{figure}[htb]
+\vspace{3.2in}
+\special{psfile=FIGS/IQMixer2 hoffset=-50 voffset=0 vscale=82 hscale=82}
+\caption{Current-driven passive mixer and LO waveforms.}
+\label{IQMixer2}
+\end{figure}
+For simplicity, let us assume that the switch resistance, $R_{sw}$, is zero. We will add its effect later. The in-phase output voltage can be
+written as  
+\beq
+V_{out,I}(t)=\left[I_{mix} \times (S_1-S_3)\right] \ast 2 Z_L. 
+\label{vouti} 
+\eeq 
+The mixer input current, $I_{mix}$, is chopped by $S_1$ and $S_3$ and convolved with the differential load impedance, $2 Z_L$. 
+Similarly, the quadrature output voltage would be
+\beq 
+V_{out,Q}(t)=\left[I_{mix} \times (S_2-S_4)\right] \ast 2 Z_L. 
+\label{voutq} 
+\eeq 
+The input voltage is equal to $V_{out,I}$ during $S_1$, -$V_{out,I}$ during $S_3$, $V_{out,Q}$ during $S_2$, and -$V_{out,Q}$ during $S_4$.
+Thus,
+\beq
+V_{in}(t)= V_{out,I}(t) \times (S_1-S_3) + V_{out,Q}(t) \times (S_2-S_4). 
+\label{vint1} 
+\eeq 
+Substituting (\ref{vouti}) and (\ref{voutq}) in (\ref{vint1}), yields
+\ber
+V_{in}(t) &=& \left\{[I_{mix} \times (S_1-S_3)] \ast 2 Z_L \right\} \times (S_1-S_3) \nonumber\\
+&+& \left\{[I_{mix} \times (S_2-S_4)] \ast 2 Z_L \right\} \times (S_2-S_4).  
+\label{vint2} 
+\eer 
+Taking the Fourier transform of (\ref{vint2}) leads to
+\ber
+V_{in}(f) &=& \left\{[I_{mix} \ast (S_1-S_3)] \times 2 Z_L \right\} \ast (S_1-S_3) \nonumber\\ 
+&+& \left\{[I_{mix} \ast (S_2-S_4)] \times 2 Z_L \right\} \ast (S_2-S_4),  
+\label{vinf1} 
+\eer
+which is the key equation to derive the input impedance. 
+Figure \ref{S1S4} plots $(S_1-S_3)$ and $(S_2-S_4)$ in both time and frequency domains.
+\begin{figure}[htb]
+\vspace{3in}
+\special{psfile=FIGS/S1S4 hoffset=-50 voffset=0 vscale=82 hscale=82}
+\caption{$(S_1-S_3)$ and $(S_2-S_4)$ in time and frequency domains.}
+\label{S1S4}
+\end{figure}
+Let us do a warm-up exercise and consider the case where the source impedance is infinite in Fig. \ref{IQMixer2}.
+
+\subsection{Infinite Source Impedance}
+Infinite source impedance, $Z_s$, yields $I_{mix}=I_{in}$. This simplifies the calculations as $I_{mix}$ would be single-tone.
+\subsubsection{Input Impedance Calculation} 
+To calculate the input impedance, we apply a tone at $f_{LO}+f_{IF}$ as shown in Fig. \ref{spectrumzmix} and would like to calculate the input voltage
+at the same frequency. 
+\begin{figure}[htb]
+\vspace{1.9in}
+\special{psfile=FIGS/spectrumzmix hoffset=-50 voffset=0 vscale=82 hscale=82}
+\caption{A single-tone current applied to the mixer and the resultant input voltage spectrum.}
+\label{spectrumzmix}
+\end{figure}
+Let us first focus on the positive-frequency impulse of
+$I_{mix}$ and see how it will be shifted along the spectrum to finally reside at the same frequency. The only way is to shift up and down by the
+same amount. For example, from the spectrum of $(S_1-S_3)$, $I_{mix}$ will be shifted up by $\sqrt 2 \delta (f-f_{LO})/\pi$ and down by  $\sqrt 2
+\delta (f+f_{LO})/\pi$. Another way is to be shifted up by $\sqrt 2 \delta (f-f_{LO})/(3\pi)$ and down by $\sqrt 2 \delta (f+f_{LO})/(3\pi)$.
+Also, the mixing mechanism can happen with first shifting down and then up. The same power would come from mixing with $(S_2-S_4)$. Note that
+because the spectrum of $(S_2-S_4)$ is odd, one component would be multiplied by $+j$ and the other by $-j$, resulting a real positive value, the
+same as that of mixing with $(S_1-S_3)$.
+An interesting practice is to see if there would be any component at the image frequency, $f_{LO}-f_{IF}$ in the $V_{in}$ spectrum. The sum of the
+two shifting frequencies has to be $\pm 2 f_{LO}$ in order to generate image. For example, the impulse at $f_{LO}+f_{IF}$ would be shifted down twice by
+$\sqrt 2 \delta (f+f_{LO})/\pi$ to reside at $-f_{LO}+f_{IF}$. However, shifting down twice by  $+j \sqrt 2 \delta (f+f_{LO})/\pi$ generates the
+same amplitude with a negative sign. Similarly, shifting down by $3 f_{LO}$ and up by $f_{LO}$ will not generate any image because the I and Q
+branches cancel each other. It is instructive to see at what frequencies $V_{in}$ has components in response to a single tone that resides at
+$f_{LO}+f_{IF}$ and $-f_{LO}-f_{IF}$. An interested reader can prove that those frequencies are $(f_{LO}+f_{IF}+4kf_{LO})$ and
+$(-f_{LO}-f_{IF}+4kf_{LO})$, where $k$ varies from $-\infty$ to $+\infty$ (Fig. \ref{spectrumzmix}).
+
+Knowing the frequency shifts that happen in (\ref{vinf1}) that contribute to the input voltage at $f_{LO}+f_{IF}$, we can write the mixer input
+impedance, $Z_{mix}$, as
+\beq
+Z_{mix}(f)=\frac{8}{\pi^2}\left[Z_L(f \pm f_{LO})+\frac{1}{3^2}Z_L(f \pm 3f_{LO})+\frac{1}{5^2} Z_L(f \pm 5f_{LO}) + ... \right].
+\label{zmix}
+\eeq
+If the load impedance is a capacitor, $1/(j 2 \pi C_L f)$, at the frequencies close to the LO frequency, $Z_L(f - f_{LO})$ dominates the summation in
+(\ref{zmix}) and the input impedance would be approximately equal to
+\beq
+Z_{mix}|_{C_L}(f) \approx \frac{8}{\pi^2} Z_L(f - f_{LO}) = \frac{8}{\pi^2} \frac{1}{j 2 \pi C_L(f-f_{LO})}.
+\label{zmixc}
+\eeq
+As another special case, if the load impedance is a resistor, $R_L$, the input impedance would be
+\beq
+Z_{mix}|_{R_L}(f)=\frac{16 R_L}{\pi^2}\left(1+\frac{1}{3^2}+\frac{1}{5^2}+...\right) = 2 R_L .
+\label{zmixr}
+\eeq
+Since there is no memory in the system, the source would not recognize that the resistor is being switched and at any point of time the differential
+input impedance is $2 R_L$.
+
+
+
+\subsubsection{Conversion Gain Calculation} 
+We are mostly interested in the trans-impedance conversion gain defined as the transfer function from the input current at $f_{LO}+f_{IF}$ to the
+output voltage at $f_{IF}$. Since $I_{mix}$ is single-tone, only the fundamental of $(S_1-S_3)$ matters. Thus, from Eq. (\ref{vouti}) the
+trans-impedance conversion gain, $A_R$, would be
+\beq
+A_R=\frac {2 \sqrt 2}{\pi} Z_L ~ \approx 0.9 Z_L.
+\label{armix}
+\eeq
+Note that if $Z_L$ is a capacitor, $A_R$ is {\em not} constant across the channel bandwidth. 
+Now, let us look at the voltage conversion gain, $A_V$, defined as the transfer function from the input voltage at $f_{LO}+f_{IF}$ to the output
+voltage at $f_{IF}$. We have
+\beq
+A_V=\frac{V_{out,I}}{V_{in}}=\frac{V_{out,I}}{I_{in}} \times \frac{I_{in}}{V_{in}}=\frac{A_R}{Z_{mix}}.
+\label{avar}
+\eeq
+Substituting (\ref{zmix}) and (\ref{armix}) in (\ref{avar}), we get
+\beq
+A_V=\frac{\frac {2 \sqrt 2}{\pi} Z_L}{\frac{8}{\pi^2}\left[Z_L(f \pm f_{LO})+\frac{1}{3^2}Z_L(f \pm 3f_{LO})+\frac{1}{5^2} Z_L(f \pm 5f_{LO}) + ... \right]}.
+\label{avmix}
+\eeq
+We can simplify $A_V$ for the special cases of load capacitor and load resistor as
+\beq
+A_V|_{C_L} \approx \frac{\pi \sqrt 2}{4} \approx 0.9 \approx  0.9~{\rm dB}, 
+\label{avmixc}
+\eeq
+\beq
+A_V|_{R_L} = \frac{\sqrt 2}{\pi} \approx 0.45 \approx -6.9~{\rm dB}.
+\label{avmixr}
+\eeq
+As expected, having a load capacitance is superior than a load resistance. Interestingly, $A_V|_{C_L}$ is greater than 1. It is not surprising,
+because $V_{out}$ is the cause and $V_{in}$ is the effect here. The power of $V_{out}$ is only at $f_{IF}$. This power is then spread over the
+specific harmonics at $V_{in}$. The same result can be achieved using Eq. (\ref{vint1}), where $V_{out}$ at $f_{IF}$ will be convolved with the
+fundamental of $(S_1-S_3)$ and $(S_2-S_4)$ to form $V_{in}$ at $f_{LO}+f_{IF}$.
+
+
+\subsubsection{Switch Resistance Effect}
+\begin{figure}[htb]
+\vspace{3in}
+\special{psfile=FIGS/Rsw hoffset=-50 voffset=0 vscale=82 hscale=82}
+\caption{Moving the switch resistance to the main path.}
+\label{rsw}
+\end{figure}
+Because only one switch out of the four switches that share one side is on at a time, we can move the switch resistance to the main path as shown in
+Fig. \ref{rsw}. 
+Then, the switch resistance is in series with the input current source ($Z_s$ is infinite), and the input impedance would be
+\beq
+Z_{mix}(f)=2 R_{sw}+\frac{8}{\pi^2}\left[Z_L(f \pm f_{LO})+\frac{1}{3^2}Z_L(f \pm 3f_{LO})+\frac{1}{5^2} Z_L(f \pm 5f_{LO}) + ... \right] .
+\label{zmixsw}
+\eeq
+The trans-impedance conversion gain does not change, but, the voltage conversion gain needs to be modified according to (\ref{zmixsw}) as
+\beq
+A_V=\frac{\frac {2 \sqrt 2}{\pi} Z_L}{2 R_{sw}+\frac{8}{\pi^2}\left[Z_L(f \pm f_{LO})+\frac{1}{3^2}Z_L(f \pm 3f_{LO})+\frac{1}{5^2} Z_L(f \pm 5f_{LO}) + ...
+\right]}.
+\label{avmixsw}
+\eeq
+Interested readers can simplify (\ref{zmixsw}) and (\ref{avmixsw}) for the special cases that we studied before.
+
+
+
+
+\subsection{Finite Source Impedance}
+With finite source impedance, $Z_s$, $I_{mix}$ is no longer equal to $I_{in}$. Instead,
+\beq
+I_{mix}=I_{in} - \frac{V_{in}}{Z_s}.
+\label{imix}
+\eeq
+Although this might seem a small change to the case with infinite $Z_s$, the equations become much more complicated. Recall from section IV.A that
+$V_{in}$ had components around odd harmonics. It can be shown that in the presence of $Z_s$, $V_{in}$ has the same frequency content but the
+amplitudes needs to be modified. Note that (\ref{imix}) yields that $I_{mix}$ also has components around odd harmonics (Fig. \ref{spectrumzin}).
+\begin{figure}[htb]
+\vspace{3.3in}
+\special{psfile=FIGS/spectrumzin hoffset=-50 voffset=0 vscale=82 hscale=82}
+\caption{A single-tone current applied at the input and the resultant spectrum of the mixer input current and voltage.}
+\label{spectrumzin}
+\end{figure}
+
+\subsubsection{Input Impedance Calculation} 
+We can still use Eq. (\ref{vinf1}) to derive the input impedance. This time, the harmonics of $I_{mix}$ convolve with the harmonics of
+$(S_1-S_3)$ and $(S_2-S_4)$, and fold to the baseband frequency. There are also other components around harmonics which we ignore after multiplication
+by $Z_L$. Since the mixer is a downconverter, the load impedance, $Z_L$, would be small at high frequencies. In order to calculate the input
+impedance, as shown in Fig. \ref{spectrumzin}, we assign $a_i$ and $b_i$ as the phasors of $I_{mix}$ and $V_{in}$ around $i$th harmonic and find their
+values using (\ref{vinf1}) and (\ref{imix}). Since the amplitude of the tone in $I_{in}$ is unity, the input impedance is equal to $b_1$. Appendix I
+finds the values of $a_i$ and $b_i$, yielding
+\beq
+Z_{in}(f)=\frac{\frac{8}{\pi^2} Z_L(f-f_{LO})}{1+\frac{8}{\pi^2} Z_L(f-f_{LO})\displaystyle{\SumAll k
+\frac{1}{(4k+1)^2 Z_s(f+4k f_{LO})}}}.
+\label{zin}
+\eeq
+If $Z_L$ is a capacitor, we can usually neglect $1$ in the denominator of (\ref{zin}) for reasonable values of $Z_s$. Thus,
+\beq
+\frac {1}{Z_{in}|_{C_L}(f)} \approx \SumAll k \frac{1}{(4k+1)^2 Z_s(f+4k f_{LO})}.
+\label{zinc}
+\eeq
+The input impedance is the parallel combination of the scaled source impedance at certain frequencies and independent of the load impedance, $Z_L$.
+Moreover, if $Z_s$ is a resistor, $R_s$, then 
+\beq
+Z_{in}|_{C_L,R_s}=\frac{8}{\pi^2}R_s \approx 0.81 R_s
+\label{zincr}
+\eeq
+
+
+\subsubsection{Conversion Gain Calculation}
+As mentioned earlier, we assume that $Z_L$ has a lowpass shape and ignore the harmonics at the output nodes.
+The voltage conversion gain is the same as the case with infinite $Z_s$, while we do not include the switch resistance. Thus, for a capacitive load,
+we have
+\beq
+A_V|_{C_L}=\frac{\pi \sqrt 2}{4} \approx 1.11 \approx 0.9~{\rm dB}.
+\label{avinc}
+\eeq
+The trans-impedance conversion gain would be $A_V \times Z_{in}$ and equal to
+\beq
+A_R|_{C_L} = \frac{\pi \sqrt 2}{4} \div \SumAll k \frac{1}{(4k+1)^2 Z_s(f+4k f_{LO})},
+\label{arinc}
+\eeq
+independent of $C_L$ and $f_{IF}$.
+
+
+\subsubsection{Switch Resistance Effect}
+If we add the switch resistance, the input voltage is equal to the one in Eq. (\ref{vinf1}) plus $2 R_{sw}I_{mix}$. Thus, 
+\ber
+V_{in}(f) &=& \left\{[I_{mix} \ast (S_1-S_3)] \times 2 Z_L \right\} \ast (S_1-S_3) \nonumber\\ 
+&+& \left\{[I_{mix} \ast (S_2-S_4)] \times 2 Z_L \right\} \ast (S_2-S_4) + 2R_{sw}I_{mix}.  
+\label{vinf1sw} 
+\eer
+Equation (\ref{imix}) is still valid and along with (\ref{vinf1sw}) derives the input impedance. Note that we could assign $a_{sw,i}$ and $b_{sw,i}$
+as the phasors of $I_{mix}$ and $V_{in}$ around $i$th harmonic and find their values similar to Appendix I. However, finding the solution is more
+difficult in this case. We wish to perform some transforms so that we can utilize the equations that we already have. This is done by the
+Norton-Thevenin-Norton conversion shown in Fig. \ref{ntn}. 
+\begin{figure}[htb]
+\vspace{1.7in}
+\special{psfile=FIGS/ntn hoffset=-20 voffset=0 vscale=82 hscale=82}
+\caption{Norton-Thevenin-Norton Conversion.}
+\label{ntn}
+\end{figure}
+The circuit in Fig. \ref{ntn}(c) is similar to the case without switch resistance, and we
+can easily find $V_{mix}$ as the input current times the input impedance seen by the source, i. e., 
+\beq
+V_{mix}(f)=I_{in}\frac{Z_s}{Z_s+2R_{sw}} \times \frac{\frac{8}{\pi^2} Z_L(f-f_{LO})}{1+\frac{8}{\pi^2} Z_L(f-f_{LO})\displaystyle{\SumAll k
+\frac{1}{(4k+1)^2 [Z_s(f+4k f_{LO})+2R_{sw}]}}}.
+\label{vmix}
+\eeq
+Then from the original circuit in Fig. \ref{ntn}(a), $V_{in}=V_{mix}+2R_{sw}I_{mix}$. Replacing $I_{mix}$ with $I_{in}-V_{in}/Z_s$, and using
+(\ref{vmix}), we find the input impedance as 
+\ber
+&&\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!Z_{in}(f)=Z_s||2R_{sw}+ \nonumber\\
+&& (\frac{Z_s}{Z_s+2R_{sw}})^2 \times \frac{\frac{8}{\pi^2} Z_L(f-f_{LO})}{1+\frac{8}{\pi^2} Z_L(f-f_{LO})\displaystyle{\SumAll k
+\frac{1}{(4k+1)^2 [Z_s(f+4k f_{LO})+2R_{sw}]}}}.
+\label{zinsw}
+\eer
+For a load capacitance and reasonable source impedance, we can usually ignore $1$ in the denominator of (\ref{zinsw}) and write
+\beq
+Z_{in}|_{C_L}(f)=Z_s||2R_{sw}+ (\frac{Z_s}{Z_s+2R_{sw}})^2 \div \displaystyle{\SumAll k \frac{1}{(4k+1)^2 [Z_s(f+4k f_{LO})+2R_{sw}]}}.
+\label{zinswc}
+\eeq
+Again, we see that the input impedance is independent of the load impedance under certain conditions.
+Now, we wish to find the voltage conversion gain, $A_V$. 
+We can write
+\beq
+V_{in}(f)=\frac {2 \sqrt 2}{\pi} V_{out,I}(f-f_{LO}) + 2R_{sw}I_{mix}(f),
+\label{vinfsw}
+\eeq
+where only low-frequency component of $V_{out,I}$ has been taken into account. Using Eq. (\ref{imix}) and the fact that $I_{in}=V_{in}/Z_{in}$, we get
+\beq
+I_{mix}=\frac {Z_s - Z_{in}}{Z_s Z_{in}} V_{in}
+\label{imix2}
+\eeq
+Solving (\ref{vinfsw}) and (\ref{imix2}) yields
+\beq
+A_V|_{C_L}=\frac{\pi \sqrt 2}{4}\left(1-2R_{sw}\frac {Z_s - Z_{in}}{Z_s Z_{in}}\right)
+\label{avincsw}
+\eeq
+The trans-impedance conversion gain, $A_R$, is equal to $A_V \times Z_{in}$, and can be found using (\ref{zinswc}) and (\ref{avincsw}).
+Interestingly, $A_R$ is independent of $C_L$ and $f_{IF}$. The latter is very important because otherwise, we would not have flat response across the
+channel.
+
+
+\subsection{Noise Figure Calculation}
+With infinite $Z_s$, the switch resistance and hence its noise is in series with the input current source. Thus, it does not contribute noise. 
+Now, let us calculate the noise figure with finite purely resistive $Z_s$ equal to $R_s$. We include the switch resistance, but assume it noiseless
+first. We add the effect of switch resistance noise later. We also assume that the load impedance is a capacitor and ignore the higher harmonics at the
+output. If $I_{in}$ is the rms value of the input signal, the signal-to-noise ratio (SNR) at the input would
+be
+\beq
+SNR_{in}=\frac{I_{in}^2}{\displaystyle{{4kT\frac{1}{R_s}}}}.
+\label{snrin}
+\eeq
+The signal and noise around $f_{LO}$ will be downconverted at the output nodes with the same trans-impedance conversion gain, $A_R$. However, the noise
+around $i$th harmonics of $f_{LO}$ will also fold on the signal with a conversion gain of $A_R/i$. Thus, the output SNR would be
+\beq
+SNR_{out}=\frac{I_{in}^2 A_R^2}{\displaystyle{{4kT\frac{1}{R_s}}}A_R^2 \left(1+\frac{1}{9}+\frac{1}{25}+...\right)},
+\label{snrout}
+\eeq
+where we have assumed the signal is double-sideband (DSB).
+By definition, the DSB noise figure is
+\beq
+NF=\frac{SNR_{in}}{SNR_{out}}=(1+\frac{1}{9}+\frac{1}{25}+...)=\frac{\pi^2}{8} \approx 0.9~{\rm dB}.
+\label{nf}
+\eeq 
+Now, let us add the switch resistance noise. For noise analysis purpose, we remove the input signal source and notice that the switch resistance is in
+series with $R_s$. Therefore, the noise figure will be degraded by $(1+2R_{sw}/R_s)$, i.e., 
+\beq
+NF=\frac{\pi^2}{8} (1+\frac{2R_{sw}}{R_s}).
+\label{nftot}
+\eeq 
+Now, let us consider a general source impedance. We still assume that at the vicinity of $f_{LO}$, $Z_s=R_s$ and the noise current source is $4kT/R_s$.
+We use the converted model in Fig. \ref{ntn}(c). 
+The input signal power is $I_{in}^2Z_s^2/(Z_s+2R_{sw})^2$, and the input noise current would be
+\beq
+\overline{i_{n}^2}=\frac{4kT Z_s^2}{R_s(Z_s+2R_{sw})^2}+\frac{4kT 2R_{sw}}{(Z_s+2R_{sw})^2}.
+\eeq
+Then the output signal is simply
+\beq
+V_{out}^2=\frac{Z_s(f_{LO})^2}{[Z_s(f_{LO})+2R_{sw}]^2}I_{in}^2 A_R^2,
+\eeq
+but for the noise we have to consider the noise around harmonics as well. It folllows that
+\ber
+\overline{V_{n,out}^2}&=&\left\{\frac{4kT Z_s(f_{LO})^2}{R_s[Z_s(f_{LO})+2R_{sw}]^2}+\frac{4kT 2R_{sw}}{[Z_s(f_{LO})+2R_{sw}]^2}\right\}A_R^2 \nonumber\\
+&+&\left\{\frac{4kT Z_s(3f_{LO})^2}{R_s[Z_s(3f_{LO})+2R_{sw}]^2}+\frac{4kT 2R_{sw}}{[Z_s(3f_{LO})+2R_{sw}]^2}\right\}\frac{A_R^2}{9} \nonumber\\
+&+&\left\{\frac{4kT Z_s(5f_{LO})^2}{R_s[Z_s(5f_{LO})+2R_{sw}]^2}+\frac{4kT 2R_{sw}}{[Z_s(5f_{LO})+2R_{sw}]^2}\right\}\frac{A_R^2}{25} + ...~.
+\eer
+Thus, we have
+\beq
+\frac{1}{SNR_{out}}=\frac{\displaystyle{{4kT\frac{1}{R_s}}}}{I_{in}^2} \frac{[Z_s(f_{LO})+2R_{sw}]^2}{Z_s(f_{LO})^2}
+\sum_{k=0}^{+\infty} \frac{1}{(2k+1)^2} \left[ \frac {Z_s[(2k+1)f_{LO}]^2 + 2R_{sw}R_s} {\{Z_s[(2k+1)f_{LO}]+2R_{sw}\}^2} \right].
+\label{1snrout}
+\eeq
+Using (\ref{snrin}) and (\ref{1snrout}), we can write the noise figure as
+\beq
+NF=\frac{[Z_s(f_{LO})+2R_{sw}]^2}{Z_s(f_{LO})^2}
+\sum_{k=0}^{+\infty} \frac{1}{(2k+1)^2} \left[ \frac {Z_s[(2k+1)f_{LO}]^2+2R_{sw}R_s} {\{Z_s[(2k+1)f_{LO}]+2R_{sw}\}^2} \right].
+\label{nfgeneral}
+\eeq
+Note that (\ref{nfgeneral}) simplifies to (\ref{nftot}) if $Z_s=R_s$. If $Z_s$ is an RLC tank resonating at $f_{LO}$ with a parallel resistor $R_s$, we
+can neglect the tank impedance at the harmonic frequencies with respect to $R_{sw}$. Thus, (\ref{nfgeneral}) simplifies to 
+\beq
+NF|_{RLC}=1+\frac{2R_{sw}}{R_s}+(\frac{\pi^2}{8}-1)\frac{(R_S+2R_{sw})^2}{2R_{sw}R_s}.
+\label{nfrlc}
+\eeq
+Note that if we do not neglect the tank impedance at the harmonics, the noise figure would be better than the one in (\ref{nfrlc}).
+An interesting point is that reducing $R_{sw}$ does not necessarily reduce the noise figure. In fact, with an RLC tank as the source resistance, the
+optimum switch resistance is
+\beq
+R_{sw, opt}=\frac{\sqrt{\pi^2-8}}{2\pi}R_s \approx 0.218R_s.
+\label{rswopt}
+\eeq
+Plugging this optimum value of $R_{sw}$ in (\ref{nfrlc}) derives the minimum noise figure of the mixer as $2.54 \approx 4.05$ dB.
+
+
+
+\section{Transformer-Mixer Design}
+Now that we know how to analyze the 25\% duty cycle mixers, we get back to the design of our receiver front end. The transformer is designed and
+optimized first to have maximum voltage gain and low power loss at the 5-GHz band. Then, looking through the secondary of the transformer, we build
+the Norton equivalent circuit of the antenna-transformer cascade over a wide bandwidth as shown in Fig. \ref{mixer}.
+\begin{figure}[htb]
+\vspace{3.7in}
+\special{psfile=FIGS/Mixer hoffset=-50 voffset=5 vscale=82 hscale=82}
+\caption{Transformer-mixer interface.}
+\label{mixer}
+\end{figure}
+Our transformer guarantees that if a load impedance of 800 $\Omega$ is attached to its secondary, then the input impedance seen from the primary is about
+50 $\Omega$.  In other words, since $Z_s$ is equal to 800 $\Omega$ at the carrier frequency, for proper matching the input impedance of the mixer needs to be
+800 $\Omega$ too. However, we know that for current-driven mixers, the input impedance depends on the source impedance itself. To avoid confusion, we
+refer to the impedance seen by $I_{in}$ denoted by $Z_{in}$. Since $I_{in}$ is ideal, this resistance is unique and independent of $I_{in}$. Thus, the
+combination of antenna-transformer and the mixers must have a secondary-referred input impedance of 400 $\Omega$. This composite input impedance is
+calculated in (\ref{zinswc}) and repeated here as
+\beq
+Z_{in}(f)=Z_s||2R_{sw}+ (\frac{Z_s}{Z_s+2R_{sw}})^2 \div \displaystyle{\SumAll k \frac{1}{(4k+1)^2 [Z_s(f+4k f_{LO})+2R_{sw}]}}.
+\label{zinswcrepeat}
+\eeq
+Due to the bandpass nature of $Z_s$, the summation on the right-hand side must be carried out for about 14 terms. Ideally, in the range of 5 to 6 GHz,
+we must have $Re\{Z_{in}(f)\} \approx Z_s(f)/2 \approx 400$ $\Omega$ and $Im\{Z_{in}(f)\} \approx 0$. Thus, Eq. (\ref{zinswcrepeat})
+yields $R_{sw}=57~\Omega$ corresponding to  $W/L=$10 $\mu$m/ 60 nm for the switches. The LO buffers driving eight such switches draw a total power of
+$fCV_{DD}^2 \approx$ 0.4 mW at 6 GHz.
+If $R_{sw} \ll Z_{in}(f)$, Eq. (\ref{zinswcrepeat}) can further be simplified to
+\beq
+\frac{1}{Z_{in}(f)}=\SumAll k \frac{1}{(4k+1)^2[Z_s(f+4kf_{LO})+R_{sw}]}.
+\label{zinsimple}
+\eeq
+Equation \ref{zinsimple} reveals that the source impedance, $Z_s$, around integer multiples of $4 f_{LO}$ in series with the switch resistance
+is scaled and put in parallel to form the composite input impedance, $Z_{in}$. In other words, since the IF port of the mixer has high impedance, the
+impedance matching is achieved by folding of the source impedance itself.
+
+
+
+Simulations indicate that the ``zero-power'' RF front end consisting of the transformer and the mixers exhibits a noise figure of 4.5 dB, a voltage
+gain of 12 dB, an input $P_{1dB}$ of $-$5.2 dBm, and an $S_{11}$ of better than $-$12 dB across the 5 GHz band. For a target receiver NF of less than
+6 dB, all of the subsequent stages must contribute no more than 1.5 dB, demanding additional circuit techniques to build low-noise yet linear baseband
+filters with low power dissipation.
+
+\section{Filter Design}
+In the 11a standard, for the lowest data rate of 6 Mb/s, the adjacent and alternate adjacent channels can be higher than the desired channel by 16 dB
+and 32 dB, respectively. For the highest data rate of 54 Mb/s, the maximum interferer power levels are reduced by 17 dB, relaxing the filtering
+requirements. However, we design the baseband filters for the worst case which requires a sharp roll-off to reduce these channels to well below the
+desired signal level $-$ unless the baseband ADCs offer a dynamic range wide enough and a sampling rate high enough to handle partially-attenuated
+blockers. 
+Because in OFDM, each subcarrier has a narrow bandwidth, the phase response can be assumed linear across each sub-channel. Thus, the phase response
+of the filter is not critical suggesting that an elliptic filter implementation is acceptable. A fifth-order elliptic filter is sufficient for our
+purpose and can be realized by cascading two biquadratic transfer functions and a single RC pole. Let us focus on designing a biquad section. 
+
+\begin{figure}[htb]
+\vspace{3.6in}
+\special{psfile=FIGS/Biquad hoffset=-50 voffset=0 vscale=82 hscale=82}
+\caption{(a) Conventional implementation of a biquad, (b) basic idea of noninvasive filtering, and (c) noninvasive implementation of a biquad.}
+\label{biquad}
+\end{figure}
+Figure \ref{biquad}(a) shows a conventional implementation of such a transfer function using three $G_m$ stages.  
+In order to study the noise behavior, we assume that each $G_m$ has an input-referred noise voltage and calculate its transfer function to the output.
+The transfer function for the noise of $G_{m1}$ and $G_{m2}$ is proportional to $(s^2+\omega_z^2)/(s^2+as+b)$ and $1/(s^2+as+b)$, respectively, which
+are both low-pass. Therefore, their noise is not attenuated in the signal band.
+The noise of $G_{m3}$, however, is attenuated through the bandpass shaping function, $s/(s^2+as+b)$. 
+The circuit also experiences nonlinearity because the signal and interferer are both amplified by $G_{m1}R_1$. As a result, $G_{m1}$ compresses at its
+output and $G_{m2}$ compresses at its input. Another issue is that this architecture needs 4-input $G_m$ cells for fully-differential implementation.
+All of these issues are mitigated in the noninvasive filtering architecture. 
+The basic idea is illustrated in Fig. \ref{biquad}(b), where a notch impedance similar to an LC trap is placed at the output of a $G_m$ stage
+\cite{Zolfaghari}. The notch impedance, Z, is high in the signal band and low at the interferer frequency. The filter transfer function follows the
+shape of Z and shunts the interferer to ground. 
+The actual implementation is shown in Fig. \ref{biquad}(c) where $G_{m3}$ and $G_{m4}$ form a gyrator that transforms $C_3$ to an emulated inductor,
+$L_e$. $L_e$ resonates with $C_2$ and generates a low-impedance path to ground at the interferer frequency. 
+Let us study the noise behavior. The transfer function for the noise of $G_{m1}$ is proportional to $(s^2+\omega_z^2)/(s^2+as+b)$ and does not
+attenuate it in the signal band. But, the noise of $G_{m2}$ and $G_{m4}$ is highpass-filtered by $s^2/(s^2+as+b)$ and can be made negligible. The
+noise of $G_{m3}$ is also attenuated by the bandpass shaping function of $s/(s^2+as+b)$. 
+In summary, compared to the previous case which had two unattenuated noise sources, this case has only one, and we expect to see lower noise.  
+This topology is also more linear since the signal is amplified by $G_{m1}R_1$, but the interferer is attenuated. As a result, $G_{m1}$ does not
+compress at its output. Note that the interferer is amplified at the output of $G_{m2}$. This can cause $G_{m2}$ and $G_{m4}$ to compress at their
+outputs and $G_{m3}$ at its input. The important point here is that the compression of $G_{m2}$, $G_{m3}$ and $G_{m4}$ only shifts the notch frequency
+but it does not affect the transfer function in the signal band.\footnote{There is a second-order effect that slightly changes the gain in the signal
+band and is verified by the measurement results in Section VII.} Because all the $G_m$ cells have one grounded input, this architecture readily lends
+itself to differential implementation.
+
+
+
+
+\begin{figure}[htb]
+\vspace{4in}
+\special{psfile=FIGS/Filter hoffset=-50 voffset=0 vscale=82 hscale=82}
+\caption{(a) Fourth-order elliptic low-pass filter, and (b) $G_m$ implementations.}
+\label{filter}
+\end{figure}
+Figure \ref{filter}(a) shows the realization of the fourth-order elliptic filter.  A first-order RC filter is then added on the PCB to reach the
+fifth order. In this design, $G_{m1}$ and $G_{m2}$ are made variable to provide gain control to accommodate the wide range of input powers specified
+by 11a. Figure \ref{filter}(b) summarizes the $G_m$ implementations. $G_{m1}$ has a PMOS input for low flicker noise and to work
+properly with an input common-mode level of 400 mV. Gain control is achieved by changing the source degeneration resistance of the input pair. Each
+branch dissipates 720 uA from a 1-V supply.  $G_{m2}$ has an NMOS input and consumes less power as its noise is not as important as that of
+$G_{m1}$. $G_{m3}$ to $G_{m8}$ are identical simple differential pairs.  The fourth-order filter exhibits an input-referred noise voltage of 2
+n$\rm{V}/\sqrt{\rm{Hz}}$ at 5 MHz, an in-channel $IIP_3$ of 193 m${\rm{V}}_{rms}$ and a voltage gain of 39 dB while consuming 4.3 mW. The filter
+voltage gain is programmable in steps of 2 to 3 dB for a total range of 43 dB.
+
+
+\section{Experimental Results}
+The receiver of Fig. \ref{architecture} has been fabricated in 65-nm digital CMOS technology. Figure \ref{die} shows the die photograph.
+\begin{figure}[htb]
+\vspace{1.025in}
+\special{psfile=FIGS/die.eps hoffset=2 voffset=0 vscale=72 hscale=72}
+\caption{Die photograph.}
+\label{die}
+\end{figure}
+The RF section occupies 350 $\mu$m $\times$ 240 $\mu$m and the baseband section 450 $\mu$m $\times$ 220 $\mu$m.\footnote{Due to limited silicon area,
+the receiver layout is decomposed and placed within other unrelated circuits, but all of the connections are present on the chip.}
+The die is bonded to a printed-circuit board and uses a 1-V supply for the main circuits, a 1.2-V source for the open-drain output drivers, and a
+400-mV supply connected to the center tap of the transformer.
+
+
+
+Figure \ref{nf} plots the measured noise figure of the complete receiver as a function of the baseband frequency. The average noise figure is about
+5.3 dB.
+\begin{figure}[htb]
+\vspace{2.4507in}
+\special{psfile=SIMS/nf.eps hoffset=-50 voffset=-140 vscale=58 hscale=58}
+\caption{Measured noise figure.}
+\label{nf}
+\end{figure}
+The sensitivity of the receiver is measured with the aid of Agilent's N5182 MXG vector signal generator and N9020A MXA signal analyzer, which
+respectively apply a 64-QAM 802.11a signal and sense the baseband outputs to construct the signal constellation. Figure \ref{constel} shows the
+results for a $-65$-dBm 5.7-GHz input at 54 MB/s.
+\begin{figure}[htb]
+\vspace{2.6in}
+\special{psfile=SIMS/65dBm3_0002.eps hoffset=0 voffset=0 vscale=28 hscale=28}
+\caption{Measured EVM at $P_{in}=-65$ dBm.}
+\label{constel}
+\end{figure}
+The error vector magnitude (EVM) is equal to $-28$ dB, exceeding the 11a specification by 5 dB, suggesting that the receiver sensitivity would be 5 dB
+better. As expected, the sensitivity was measured to be $-$70 dBm with an EVM of $-$23.4 dB.
+
+Figure \ref{s11} plots the $S_{11}$ from 5 to 6 GHz, measured at each input frequency, while the mixers switch at the corresponding LO frequency.
+\begin{figure}[htb]
+\vspace{2.6in}
+\special{psfile=SIMS/s11_2.eps hoffset=-50 voffset=-140 vscale=58 hscale=58}
+\caption{Measured input return loss.}
+\label{s11}
+\end{figure}
+It is expected that a slightly larger transformer or adding more capacitance can yield $S_{11}<-10$ dB across the band.
+\begin{figure}[htb]
+\vspace{2.6in}
+\special{psfile=SIMS/sensitivity.eps hoffset=-50 voffset=-140 vscale=58 hscale=58}
+\caption{Measured sensitivity.}
+\label{sensitivity}
+\end{figure}
+Figure \ref{sensitivity} shows the sensitivity of the receiver from 5 to 6 GHz. The sensitivity degrades a little at lower frequencies again because the
+transformer is mistuned. 
+\begin{figure}[htb]
+\vspace{2.6in}
+\special{psfile=SIMS/gainvsf.eps hoffset=-50 voffset=-140 vscale=58 hscale=58}
+\caption{Measured passband gain.}
+\label{gainvsf}
+\end{figure}
+The receiver gain across the band in Fig. \ref{gainvsf} also confirms the transformer mistuning.
+
+\begin{figure}[htb]
+\vspace{2.55in}
+\special{psfile=SIMS/gain.eps hoffset=-50 voffset=-140 vscale=58 hscale=58}
+\caption{Measured receiver transfer function.}
+\label{tf}
+\end{figure}
+Figure \ref{tf} plots the measured receiver transfer function, revealing a passband peaking of 1 dB and a rejection of 22 dB at 20 MHz and 43 dB at
+40 MHz.\footnote{In this measurement a first-order RC section follows each output on the PCB.}
+Owing to the finite output resistance of the $G_m$ cells, the filter does not exhibit the deep notches that are characteristic of elliptic transfer
+functions.
+The performance of the baseband filter is ultimately tested when a large blocker accompanies a small desired signal. In such a case, the filter must
+remain sufficiently selective and linear so that the desired signal does not experience compression. Figure \ref{gainblocker} plots the measured
+passband gain as a function of the power of an RF blocker in the adjacent or alternate adjacent channel.
+\begin{figure}[htb]
+\vspace{2.65in}
+\special{psfile=SIMS/gainblocker.eps hoffset=-50 voffset=-140 vscale=58 hscale=58}
+\caption{Measured passband gain in the presence of a blocker.}
+\vspace{0.1in}
+\label{gainblocker}
+\end{figure}
+Note that this measurement is done with the maximum receiver gain which corresponds to the signal levels around the sensitivity, e.g. $-$60 dBm. The
+maximum adjacent channel interferer would be 1 dB lower or $-$61 dBm for which the variation of gain is negligible. Even with the maximum 11a power of
+$-$30 dBm, the gain variation is only about 1 dB. The peaking of gain with large adjacent-channel interferer is also observed in simulations and is
+due to the compression in the notch-impedance $G_m$ cells. For the alternate-adjacent-channel interferer the gain variation is much less and totally
+negligible even upto $-$30 dBm. 
+
+The filter nonlinearity resulting from a blocker may also corrupt the 11a 64-QAM OFDM signal by creating cross modulation among the sub-channels.
+This effect is characterized by setting the RF input signal level 3 dB above the sensitivity, applying a blocker, and raising its level until the EVM
+falls to $-$23 dB. Figure \ref{evmint} plots the relative blocker level as a function of the frequency offset with respect to the desired signal
+center frequency.
+\begin{figure}[htb]
+\vspace{2.65in}
+\special{psfile=SIMS/interferer_rejection.eps hoffset=-50 voffset=-140 vscale=58 hscale=58}
+\caption{Measured interferer rejection.}
+\vspace{0.1in}
+\label{evmint}
+\end{figure}
+
+Figure \ref{evmpin} shows the measured EVM and the corresponding passband gain versus input power. As the input signal power increases, a lower gain
+is chosen for the variable-gain $G_m$ cells. For small input powers EVM is noise-limited and improves with the input power, while at large input powers
+EVM is nonlinearity-limited and will eventually go up. The variable gain range is such that even with maximum 11a signal of $-$30 dBm, the EVM is not
+degraded due to nonlinearity.
+\begin{figure}[htb]
+\vspace{2.65in}
+\special{psfile=SIMS/evm_AGC.eps hoffset=-50 voffset=-140 vscale=58 hscale=58}
+\caption{Measured EVM and passband gain versus input power.}
+\vspace{0.1in}
+\label{evmpin}
+\end{figure}
+
+Table 1 summarizes the receiver performance and compares it to that of prior art. This work has reduced the power consumption by about a factor of 4,
+while demonstrating a sensitivity of $-$70 dBm. 
+\begin{table}[htb]
+\caption{Comparison with state-of-the-art.}
+\vspace{3.05in}
+\special{psfile=FIGS/table hoffset=-50 voffset=0 vscale=82 hscale=82}
+\label{table}
+\end{table}
+
+\section{Conclusion}
+This paper suggests the use of transformers in place of active LNAs to save power and provide ESD protection. The ``zero-power'' front end consisting
+of a transformer followed by passive mixers has reasonable performance and combined with noninvasive filtering, exceeds the 11a requirements while
+consuming only 11.6 mW.
+The proposed analysis of current-driven passive mixers provides insight into their properties.
+
+
+\begin{center} {\large Acknowledgment}
+\end{center}
+The authors wish to thank TSMC's University Shuttle Program for chip fabrication.
+This work was supported by Realtek Semiconductor.
+
+
+\begin{thebibliography}{9}
+
+\bibitem{Kan} L. L. L. Kan et al., ``A 1-V 86-mW RX 53-mW TX single-chip CMOS transceiver for WLAN IEEE 802.11a,'' {\em IEEE J. Solid-State Circuits,} 
+vol. 42, no. 9, pp. 1986--1998, Sep. 2007.
+
+\bibitem{Zolfaghari} A. Zolfaghari and B. Razavi, ``A low-power 2.4-GHz transmitter/receiver CMOS IC,'' {\em IEEE J. Solid-State Circuits,} vol. 38,
+no. 2, pp. 176--183, Feb. 2003.
+
+\bibitem{Zolfaghari2} A. Zolfaghari, A. Chan, and B. Razavi, ``Stacked inductors and transformers in CMOS technology,'' {\em IEEE J. Solid-State Circuits,} vol.
+36, no. 4, pp. 620--628, Apr. 2001.
+
+\bibitem{Long} J. R. Long, ``Monolithic transformers for silicon RF IC design,'' {\em IEEE J. Solid-State Circuits,} vol.
+35, no. 9, pp. 1368--1383, Sept. 2000.
+
+\bibitem{Nauta} M. Soer, et al., ``A 0.2-to-2.0GHz 65nm CMOS receiver without LNA achieving $>$11dBm IIP3 and $<$6.5 dB NF,'' {\em ISSCC Dig.
+of Tech. Papers,} pp. 222--223, Feb. 2009.
+
+\bibitem{Kaczman} D. Kaczman, et al., ``A single-chip 10-band WCDMA/HSDPA 4-band GSM/EDGE SAW-less CMOS receiver with DigRF 3G interface
+and +90 dBm IIP2,'' {\em IEEE J. Solid-State Circuits,} vol. 44, no. 3, pp. 718--739, Mar. 2009.
+
+\bibitem{Blaakmeer} S. C. Blaakmeer, et al., ``The BLIXER, a wideband balun-LNA-I/Q-mixer topology,'' {\em IEEE J. Solid-State Circuits,} vol. 43,
+no. 12, pp. 2706--2715, Dec. 2008.
+
+\bibitem{Mirzaei} A. Mirzaei and H. Darabi, ``Analysis of imperfections on performance of 4-phase passive-mixer-based high-Q bandpass filters in SAW-less
+receivers,'' {\em IEEE Trans. Circuits Syst. I, Reg. Papers,} vol 58, no. 5, pp. 879--892, May 2011.
+
+\bibitem{Andrews} C. Andrews and A. C. Molnar, ``A passive mixer-first receiver with digitally controlled and widely tunable RF interface,'' {\em
+IEEE J. Solid-State Circuits,} vol 45, no. 12, pp. 2696--2708, Dec. 2010. 
+
+\bibitem{Maeda} T. Maeda et al., ``Low-power-consumption direct-conversion CMOS transceiver for multi-standard 5-GHz wireless LAN systems with channel
+bandwidths of 5-20 MHz,'' {\em IEEE J. Solid-State Circuits,} 
+vol. 41, no. 2, pp. 375--383, Feb. 2006.
+
+\bibitem{Lim} K. Lim et al., ``A 2x2 MIMO tri-band dual-mode direct-conversion CMOS transceiver for worldwide WiMAX/WLAN applications,'' {\em IEEE J. Solid-State
+Circuits,} vol. 46, no. 7, pp. 1648--1658, Jul. 2011.
+
+%\bibitem{Valla} M. Valla et al., ``A 72-mW CMOS 802.11a direct conversion front-end with 3.5-dB NF and 200-KHz 1/f noise corner,'' {\em IEEE J. Solid-State Circuits,} 
+%vol. 40, no. 4, pp. 970--977, Apr. 2005.
+
+
+\end{thebibliography}
+
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,59 @@
+\contentsline {chapter}{\numberline {1}Introduction}{1}
+\contentsline {section}{\numberline {1.1}Organization}{1}
+\contentsline {chapter}{\numberline {2}Analysis of Phase Noise in Phase/Frequency Detectors}{3}
+\contentsline {section}{\numberline {2.1}Introduction}{3}
+\contentsline {section}{\numberline {2.2}Background}{4}
+\contentsline {subsection}{\numberline {2.2.1}Motivation}{4}
+\contentsline {subsection}{\numberline {2.2.2}Observations}{6}
+\contentsline {section}{\numberline {2.3}Phase Noise of CMOS Inverter}{8}
+\contentsline {subsection}{\numberline {2.3.1}Noise of Transistor Turning On}{9}
+\contentsline {subsection}{\numberline {2.3.2}Noise of Transistor Turning Off}{14}
+\contentsline {subsection}{\numberline {2.3.3}Total Phase Noise}{15}
+\contentsline {section}{\numberline {2.4}Phase Noise of CMOS NAND Gate}{15}
+\contentsline {section}{\numberline {2.5}PFD Phase Noise Analysis}{16}
+\contentsline {subsection}{\numberline {2.5.1}NAND PFD}{16}
+\contentsline {subsection}{\numberline {2.5.2}TSPC PFD}{19}
+\contentsline {section}{\numberline {2.6}Design Optimization}{21}
+\contentsline {subsection}{\numberline {2.6.1}NAND PFD Optimization}{23}
+\contentsline {subsection}{\numberline {2.6.2}TSPC PFD Optimization}{24}
+\contentsline {subsection}{\numberline {2.6.3}Dependence on Operation frequency}{25}
+\contentsline {section}{\numberline {2.7}Simulation Results}{25}
+\contentsline {subsection}{\numberline {2.7.1}Inverter and NAND Simulations}{26}
+\contentsline {subsection}{\numberline {2.7.2}PFD Simulations}{26}
+\contentsline {section}{\numberline {2.8}Effect of Pulse Position Modulation}{30}
+\contentsline {section}{\numberline {2.9}Phase Noise of Square Wave with Uncorrelated Jitters on Rising and Falling Edges}{31}
+\contentsline {section}{\numberline {2.10}Spectrum of Shaped and Sampled White Noise}{34}
+\contentsline {section}{\numberline {2.11}Conclusion}{36}
+\contentsline {chapter}{\numberline {3}Relation Between Delay Line Phase Noise and Ring Oscillator Phase Noise}{37}
+\contentsline {section}{\numberline {3.1}Introduction}{37}
+\contentsline {section}{\numberline {3.2}Phase Noise of Delay Lines}{38}
+\contentsline {section}{\numberline {3.3}Phase Noise of Ring Oscillators}{40}
+\contentsline {section}{\numberline {3.4}Useful Insights}{44}
+\contentsline {subsection}{\numberline {3.4.1}Comparison of Delay Lines and Ring Oscillators}{45}
+\contentsline {subsection}{\numberline {3.4.2}Compact Phase Noise Equations}{46}
+\contentsline {subsection}{\numberline {3.4.3}Effect of Transition Symmetry on Flicker Noise Upconversion}{48}
+\contentsline {subsection}{\numberline {3.4.4}Effect of Scaling on Phase Noise}{49}
+\contentsline {section}{\numberline {3.5}Simulation Results}{51}
+\contentsline {section}{\numberline {3.6}Experimental Results}{54}
+\contentsline {section}{\numberline {3.7}Conclusion}{56}
+\contentsline {chapter}{\numberline {4}A 5-GHz 11.6-mW CMOS Receiver for IEEE 802.11a Applications}{58}
+\contentsline {section}{\numberline {4.1}Introduction}{58}
+\contentsline {section}{\numberline {4.2}Transformers as LNAs}{59}
+\contentsline {section}{\numberline {4.3}Receiver Architecture}{62}
+\contentsline {section}{\numberline {4.4}Analysis of Current-Driven Passive Mixers}{63}
+\contentsline {subsection}{\numberline {4.4.1}Infinite Source Impedance}{66}
+\contentsline {subsubsection}{\numberline {4.4.1.1}Input Impedance Calculation}{66}
+\contentsline {subsubsection}{\numberline {4.4.1.2}Conversion Gain Calculation}{68}
+\contentsline {subsubsection}{\numberline {4.4.1.3}Switch Resistance Effect}{69}
+\contentsline {subsection}{\numberline {4.4.2}Finite Source Impedance}{70}
+\contentsline {subsubsection}{\numberline {4.4.2.1}Input Impedance Calculation}{71}
+\contentsline {subsubsection}{\numberline {4.4.2.2}Conversion Gain Calculation}{72}
+\contentsline {subsubsection}{\numberline {4.4.2.3}Switch Resistance Effect}{73}
+\contentsline {subsection}{\numberline {4.4.3}Noise Figure Calculation}{75}
+\contentsline {section}{\numberline {4.5}Transformer-Mixer Design}{77}
+\contentsline {section}{\numberline {4.6}Filter Design}{79}
+\contentsline {section}{\numberline {4.7}Experimental Results}{83}
+\contentsline {section}{\numberline {4.8}Derivation of Input Impedance with Finite Source Impedance}{90}
+\contentsline {section}{\numberline {4.9}Conclusion}{92}
+\contentsline {chapter}{\numberline {5}Future Work}{93}
+\contentsline {chapter}{References}{94}

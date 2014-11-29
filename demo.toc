@@ -1,3 +1,3 @@
-\contentsline {chapter}{\numberline {1}High-Speed Nanometer-Resolved Imaging Vibrometer \& Velocimeter}{1}
+\contentsline {chapter}{\numberline {1}Nanometer-Resolved Imaging Vibrometer}{1}
 \contentsline {section}{\numberline {1.1}Introduction}{1}
 \contentsline {chapter}{References}{9}
