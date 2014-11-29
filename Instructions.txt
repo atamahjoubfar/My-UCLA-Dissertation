@@ -8,5 +8,5 @@ Quick instructions by Ata Mahjoubfar
 6. Open demo.tex file with TeXworks, and run pdfLaTeX
 7. To update chapters, open thier seperate TeX files, and use \include command to include them in the demo.tex file
 8. To update bibliography, edit DissertationBib. You can get these items from "Import into BibTeX" of Google Scholar. You can even make this your default citation format in Google Scholar.
-9. Everytime you need to update citations run, pdfLaTeX, then BibTeX, then pdfLateX, then BibTeX again.
+9. Everytime you need to update citations run, pdfLaTeX, then BibTeX, then pdfLateX twice.
 10. For figure tiff files doesn't work, but eps and png works by default.

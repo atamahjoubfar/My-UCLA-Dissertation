@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/W32TeX) (preloaded format=pdflatex 2014.11.27)  29 NOV 2014 04:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/W32TeX) (preloaded format=pdflatex 2014.11.27)  29 NOV 2014 04:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -650,28 +650,29 @@ Overfull \hbox (7.50839pt too wide) in paragraph at lines 13--14
 File: APL2011/Figure1.png Graphic file (type png)
 
 <use APL2011/Figure1.png>
-Package pdftex.def Info: APL2011/Figure1.png used on input line 19.
+Package pdftex.def Info: APL2011/Figure1.png used on input line 21.
 (pdftex.def)             Requested size: 326.19969pt x 267.39835pt.
- [3] [4 <./APL2011/Figure1.png>]
-<APL2011/Figure2.png, id=76, 325.215pt x 423.4365pt>
+ [3] [4 <./APL2011/Figure1.png>] [5]
+<APL2011/Figure2.png, id=81, 325.215pt x 423.4365pt>
 File: APL2011/Figure2.png Graphic file (type png)
  <use APL2011/Figure2.png>
-Package pdftex.def Info: APL2011/Figure2.png used on input line 32.
+Package pdftex.def Info: APL2011/Figure2.png used on input line 38.
 (pdftex.def)             Requested size: 325.2142pt x 423.43546pt.
 
-[5] <APL2011/Figure3.png, id=82, 325.215pt x 227.6505pt>
+<APL2011/Figure3.png, id=82, 325.215pt x 227.6505pt>
 File: APL2011/Figure3.png Graphic file (type png)
-
-<use APL2011/Figure3.png>
-Package pdftex.def Info: APL2011/Figure3.png used on input line 41.
+ <use APL2011/Figure3.png>
+Package pdftex.def Info: APL2011/Figure3.png used on input line 47.
 (pdftex.def)             Requested size: 325.2142pt x 227.64993pt.
- [6 <./APL2011/Figure2.png>]
-<APL2011/Figure4.png, id=86, 325.215pt x 227.6505pt>
+
+<APL2011/Figure4.png, id=83, 325.215pt x 227.6505pt>
 File: APL2011/Figure4.png Graphic file (type png)
  <use APL2011/Figure4.png>
-Package pdftex.def Info: APL2011/Figure4.png used on input line 50.
+Package pdftex.def Info: APL2011/Figure4.png used on input line 56.
 (pdftex.def)             Requested size: 325.2142pt x 227.64993pt.
-) (./demo.bbl [7 <./APL2011/Figure3.png>] [8 <./APL2011/Figure4.png>]
+
+[6]) (./demo.bbl [7 <./APL2011/Figure2.png>] [8 <./APL2011/Figure3.png> <./APL2
+011/Figure4.png>]
 Underfull \hbox (badness 1584) in paragraph at lines 63--68
 \OT1/cmr/m/n/12 Michael La-posata, Su-liana Man-ley, Ra-machan-dra R Dasari, Ka
 m-ran
@@ -697,7 +698,7 @@ ist/fonts/type1/public/amsfonts/cm/cmsl12.pfb><c:/texlive/2014/texmf-dist/fonts
 /type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2014/texmf-dist/fonts/type1/pu
 blic/amsfonts/cm/cmsy8.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/amsfo
 nts/cm/cmti12.pfb>
-Output written on demo.pdf (26 pages, 860912 bytes).
+Output written on demo.pdf (26 pages, 862116 bytes).
 PDF statistics:
  130 PDF objects out of 1000 (max. 8388607)
  87 compressed objects within 1 object stream
