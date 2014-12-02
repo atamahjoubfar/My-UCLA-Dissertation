@@ -16,14 +16,18 @@
 \contentsline {chapter}{\numberline {4}Optically amplified detection for biomedical sensing and imaging}{33}
 \contentsline {section}{\numberline {4.1}Introduction}{34}
 \contentsline {section}{\numberline {4.2}Raman amplification as an optical postamplifier}{37}
-\contentsline {section}{\numberline {4.3}Limiting noise sources}{40}
-\contentsline {subsection}{\numberline {4.3.1}Double Rayleigh backscattering noise}{40}
-\contentsline {subsection}{\numberline {4.3.2}Pump-to-Stokes relative intensity noise transfer}{41}
+\contentsline {section}{\numberline {4.3}Limiting noise sources}{39}
+\contentsline {subsection}{\numberline {4.3.1}Double Rayleigh backscattering noise}{39}
+\contentsline {subsection}{\numberline {4.3.2}Pump-to-Stokes relative intensity noise transfer}{40}
 \contentsline {subsection}{\numberline {4.3.3}Amplified spontaneous emission noise}{42}
 \contentsline {subsection}{\numberline {4.3.4}Detection noise}{43}
-\contentsline {subsection}{\numberline {4.3.5}Sensitivity analysis}{44}
-\contentsline {section}{\numberline {4.4}Comparison of various noise components}{45}
-\contentsline {section}{\numberline {4.5}Signal-to-noise ratio of the detection system enhanced by the Raman amplifier}{48}
-\contentsline {section}{\numberline {4.6}Sensitivity improvements by the Raman amplifier at various wavelengths}{49}
-\contentsline {section}{\numberline {4.7}Conclusion}{51}
-\contentsline {chapter}{References}{56}
+\contentsline {section}{\numberline {4.4}Sensitivity analysis}{44}
+\contentsline {subsection}{\numberline {4.4.1}Comparison of various noise components}{44}
+\contentsline {subsection}{\numberline {4.4.2}Signal-to-noise ratio of the detection system enhanced by the Raman amplifier}{47}
+\contentsline {subsection}{\numberline {4.4.3}Sensitivity improvements by the Raman amplifier at various wavelengths}{48}
+\contentsline {section}{\numberline {4.5}Conclusion}{50}
+\contentsline {chapter}{\numberline {5}Raman amplification at 800 nm}{57}
+\contentsline {section}{\numberline {5.1}Introduction}{57}
+\contentsline {section}{\numberline {5.2}Advantages of Raman amplification}{59}
+\contentsline {section}{\numberline {5.3}Experimental demonstration}{59}
+\contentsline {chapter}{References}{62}

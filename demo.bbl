@@ -1,4 +1,4 @@
-\begin{thebibliography}{10}
+\begin{thebibliography}{100}
 
 \bibitem{castellini2006laser}
 P~Castellini, M~Martarelli, and EP~Tomasini.
@@ -409,5 +409,208 @@ Anne~E Carpenter, Thouis~R Jones, Michael~R Lamprecht, Colin Clarke, In~H Kang,
 \newblock Cellprofiler: image analysis software for identifying and quantifying
   cell phenotypes.
 \newblock {\em Genome biology}, 7(10):R100, 2006.
+
+\bibitem{ohki2005functional}
+Kenichi Ohki, Sooyoung Chung, Yeang~H Ch'ng, Prakash Kara, and R~Clay Reid.
+\newblock Functional imaging with cellular resolution reveals precise
+  micro-architecture in visual cortex.
+\newblock {\em Nature}, 433(7026):597--603, 2005.
+
+\bibitem{golshani2009internally}
+Peyman Golshani, J~Tiago Gon{\c{c}}alves, Sattar Khoshkhoo, Ricardo Mostany,
+  Stelios Smirnakis, and Carlos Portera-Cailliau.
+\newblock Internally mediated developmental desynchronization of neocortical
+  network activity.
+\newblock {\em The Journal of Neuroscience}, 29(35):10890--10899, 2009.
+
+\bibitem{slade2000complete}
+Stephen Slade, Dorothy Brockman, and Richard~N Baker.
+\newblock {\em The Complete Book of Laser Eye Surgery}.
+\newblock Sourcebooks., 2000.
+
+\bibitem{delius2002twenty}
+Michael Delius.
+\newblock Twenty years of shock wave research at the institute for surgical
+  research.
+\newblock {\em European surgical research}, 34(1-2):30--36, 2002.
+
+\bibitem{riehle1987principles}
+Robert~A Riehle et~al.
+\newblock {\em Principles of extracorporeal shock wave lithotripsy}.
+\newblock Churchill Livingstone, 1987.
+
+\bibitem{squires2005microfluidics}
+Todd~M Squires and Stephen~R Quake.
+\newblock Microfluidics: Fluid physics at the nanoliter scale.
+\newblock {\em Reviews of modern physics}, 77(3):977, 2005.
+
+\bibitem{watson2004introduction}
+James~V Watson.
+\newblock {\em Introduction to flow cytometry}.
+\newblock Cambridge University Press, 2004.
+
+\bibitem{hult2007high}
+Johan Hult, Rosalynne~S Watt, and Clemens~F Kaminski.
+\newblock High bandwidth absorption spectroscopy with a dispersed
+  supercontinuum source.
+\newblock {\em Optics express}, 15(18):11385--11395, 2007.
+
+\bibitem{epstein1998introduction}
+Irving~Robert Epstein and John~Anthony Pojman.
+\newblock {\em An introduction to nonlinear chemical dynamics: oscillations,
+  waves, patterns, and chaos}.
+\newblock Oxford University Press New York, 1998.
+
+\bibitem{petty2006spatiotemporal}
+Howard~R Petty.
+\newblock Spatiotemporal chemical dynamics in living cells: from information
+  trafficking to cell physiology.
+\newblock {\em Biosystems}, 83(2):217--224, 2006.
+
+\bibitem{siesler2008near}
+Heinz~W Siesler, Yukihiro Ozaki, Satoshi Kawata, and H~Michael Heise.
+\newblock {\em Near-infrared spectroscopy: principles, instruments,
+  applications}.
+\newblock John Wiley \& Sons, 2008.
+
+\bibitem{diaspro2001confocal}
+Alberto Diaspro.
+\newblock Confocal and two-photon microscopy: foundations, applications and
+  advances.
+\newblock {\em Confocal and Two-Photon Microscopy: Foundations, Applications
+  and Advances, by Alberto Diaspro (Editor), pp. 576. ISBN 0-471-40920-0.
+  Wiley-VCH, November 2001.}, 1, 2001.
+
+\bibitem{han2003photonic}
+Yan Han and Bahram Jalali.
+\newblock Photonic time-stretched analog-to-digital converter: Fundamental
+  concepts and practical considerations.
+\newblock {\em Journal of Lightwave Technology}, 21(12):3085, 2003.
+
+\bibitem{horowitz1989art}
+Paul Horowitz, Winfield Hill, and Thomas~C Hayes.
+\newblock {\em The art of electronics}, volume~2.
+\newblock Cambridge university press Cambridge, 1989.
+
+\bibitem{agrawal2007nonlinear}
+Govind~P Agrawal.
+\newblock {\em Nonlinear fiber optics}.
+\newblock Academic press, 2007.
+
+\bibitem{islam2002raman}
+Mohammed~N Islam.
+\newblock Raman amplifiers for telecommunications.
+\newblock {\em Selected Topics in Quantum Electronics, IEEE Journal of},
+  8(3):548--559, 2002.
+
+\bibitem{goda2009demonstration}
+Keisuke Goda, Ata Mahjoubfar, and Bahram Jalali.
+\newblock Demonstration of raman gain at 800 nm in single-mode fiber and its
+  potential application to biological sensing and imaging.
+\newblock {\em Applied Physics Letters}, 95(25):251101, 2009.
+
+\bibitem{mahjoubfar2010raman}
+Ata Mahjoubfar, Keisuke Goda, and Bahram Jalali.
+\newblock Raman amplification at 800 nm in single-mode fiber for biological
+  sensing and imaging.
+\newblock In {\em Conference on Lasers and Electro-Optics}, page CFA4. Optical
+  Society of America, 2010.
+
+\bibitem{bird2002compact}
+Damian Bird and Min Gu.
+\newblock Compact two-photon fluorescence microscope based on a single-mode
+  fiber coupler.
+\newblock {\em Optics letters}, 27(12):1031--1033, 2002.
+
+\bibitem{kimura1991confocal}
+Shigeharu Kimura and Tony Wilson.
+\newblock Confocal scanning optical microscope using single-mode fiber for
+  signal detection.
+\newblock {\em Applied optics}, 30(16):2143--2150, 1991.
+
+\bibitem{mahjoubfar2013label}
+Ata Mahjoubfar, Claire Chen, Kayvan~R Niazi, Shahrooz Rabizadeh, and Bahram
+  Jalali.
+\newblock Label-free high-throughput cell screening in flow.
+\newblock {\em Biomedical optics express}, 4(9):1618--1625, 2013.
+
+\bibitem{wolfbeis2004fiber}
+Otto~S Wolfbeis.
+\newblock Fiber-optic chemical sensors and biosensors.
+\newblock {\em Analytical Chemistry}, 76(12):3269--3284, 2004.
+
+\bibitem{song2006refractive}
+WZ~Song, XM~Zhang, AQ~Liu, CS~Lim, PH~Yap, and Habib Mir~M Hosseini.
+\newblock Refractive index measurement of single living cells using on-chip
+  fabry-perot cavity.
+\newblock {\em Applied physics letters}, 89(20):203901, 2006.
+
+\bibitem{piliarik2003surface}
+Marek Piliarik, Jir{\i} Homola, Z~Man{\i}kov{\'a}, and J~{\v{C}}tyrok{\`y}.
+\newblock Surface plasmon resonance sensor based on a single-mode
+  polarization-maintaining optical fiber.
+\newblock {\em Sensors and Actuators B: Chemical}, 90(1):236--242, 2003.
+
+\bibitem{agrawal1997fiber}
+Govind~P Agrawal.
+\newblock {\em Fiber-optic communication systems}, volume~1.
+\newblock 1997.
+
+\bibitem{kim2002reflection}
+CH~Kim, Jake Bromage, and RM~Jopson.
+\newblock Reflection-induced penalty in raman amplified systems.
+\newblock {\em Photonics Technology Letters, IEEE}, 14(4):573--575, 2002.
+
+\bibitem{islam2004raman}
+Mohammad~N Islam.
+\newblock {\em Raman amplifiers for telecommunications 2: sub-systems and
+  systems}, volume~2.
+\newblock Springer, 2004.
+
+\bibitem{lewis2000characterization}
+SAE Lewis, SV~Chernikov, and JR~Taylor.
+\newblock Characterization of double rayleigh scatter noise in raman
+  amplifiers.
+\newblock {\em IEEE Photonics Technology Letters}, 12(5):528--530, 2000.
+
+\bibitem{hansen1998rayleigh}
+PB~Hansen, L~Eskildsen, AJ~Stentz, TA~Strasser, J~Judkins, JJ~DeMarco,
+  R~Pedrazzani, and DJ~DiGiovanni.
+\newblock Rayleigh scattering limitations in distributed raman pre-amplifiers.
+\newblock {\em Photonics Technology Letters, IEEE}, 10(1):159--161, 1998.
+
+\bibitem{nissov1999rayleigh}
+M~Nissov, K~Rottwitt, HD~Kidorf, and MX~Ma.
+\newblock Rayleigh crosstalk in long cascades of distributed unsaturated raman
+  amplifiers.
+\newblock {\em Electronics Letters}, 35(12):997--998, 1999.
+
+\bibitem{headley2005raman}
+Clifford Headley and Govind Agrawal.
+\newblock {\em Raman amplification in fiber optical communication systems}.
+\newblock Academic Press, 2005.
+
+\bibitem{fludger2001pump}
+CRS Fludger, V~Handerek, and RJ~Mears.
+\newblock Pump to signal rin transfer in raman fiber amplifiers.
+\newblock {\em Lightwave Technology, Journal of}, 19(8):1140--1148, 2001.
+
+\bibitem{agrawal2001applications}
+Govind Agrawal.
+\newblock {\em Applications of nonlinear fiber optics}.
+\newblock Academic press, 2001.
+
+\bibitem{kogelnik1964considerations}
+H~Kogelnik and A~Yariv.
+\newblock Considerations of noise and schemes for its reduction in laser
+  amplifiers.
+\newblock {\em Proceedings of the IEEE}, 52(2):165--172, 1964.
+
+\bibitem{rottwitt2003scaling}
+Karsten Rottwitt, Jake Bromage, Andrew~J Stentz, Lufeng Leng, Malcolm~E Lines,
+  and Henrik Smith.
+\newblock Scaling of the raman gain coefficient: Applications to
+  germanosilicate fibers.
+\newblock {\em Journal of lightwave technology}, 21(7):1652, 2003.
 
 \end{thebibliography}
