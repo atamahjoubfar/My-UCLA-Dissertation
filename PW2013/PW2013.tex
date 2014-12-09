@@ -1,4 +1,4 @@
-\chapter{Three-dimensional Ultrafast Laser Scanner}
+\chapter{Three-dimensional ultrafast laser scanner}
 \label{chp:PW2013_Chapter}
 
 Laser scanners are essential for scientific research, manufacturing, defense, and medical practice. Unfortunately, often times the speed of conventional laser scanners (e.g., galvanometric mirrors and acousto-optic deflectors) falls short for many applications, resulting in motion blur and failure to capture fast transient information. Here, we present a novel type of laser scanner that offers roughly three orders of magnitude higher scan rates than conventional methods. Our laser scanner, which we refer to as the hybrid dispersion laser scanner, performs inertia-free laser scanning by dispersing a train of broadband pulses both temporally and spatially. More specifically, each broadband pulse is temporally processed by time stretch dispersive Fourier transform and further dispersed into space by one or more diffractive elements such as prisms and gratings. As a proof-of-principle demonstration, we perform 1D line scans at a record high scan rate of 91 MHz and 2D raster scans and 3D volumetric scans at an unprecedented scan rate of 105 kHz. The method holds promise for a broad range of scientific, industrial, and biomedical applications. To show the utility of our method, we demonstrate imaging, nanometer-resolved surface vibrometry, and high-precision flow cytometry with real-time throughput that conventional laser scanners cannot offer due to their low scan rates.
@@ -11,7 +11,7 @@ Various types of laser scanners have been developed over the past few decades. T
 
 Recently, we have demonstrated a new type of inertia-free ultra-fast laser scanner that can achieve about three orders of magnitude faster scan rates than the conventional methods \cite{goda2012hybrid}. The operation principle of this method, namely the hybrid dispersion laser scanner (HDLS), is based on probing different points of a target with frequency components of a linearly chirped broadband optical pulse at different times. In this chapter, we present results from our demonstration of linear scans at 90.8 MHz, 2D raster scans at 105.4 kHz, and 3D scanning surface vibrometry with nanometer axial resolution.
 
-\section{Principle of Hybrid dispersion laser scanner}
+\section{Principle of hybrid dispersion laser scanner}
 
 The concept of HDLS relies on the transformation from spectral to temporal and spatial domains, respectively (Figure \ref{fig:PW2013_Figure1}). First, by a process called dispersive Fourier transformation \cite{kelkar1999time,chou2007femtosecond,goda2009theory,goda2009serial,goda2008amplified} based on group-velocity dispersion, the spectra of broadband optical pulses of a mode-locked laser are mapped into temporal waveforms. Then, a spatial dispersive element such as a diffraction grating or a virtually imaged phased array (VIPA) maps the spectrum of chirped pulses onto a line over the object such that different wavelength components hit the target at different positions and times. The reflected or scattered light from the target is then detected by a single-pixel photodetector. Wavelength components of each laser pulse perform one linear scan, and therefore, the scan rate is same as the repetition rate of the mode-locked laser. A complementary scanner for other axis can be added to achieve 2D raster scans with HDLS.
 
@@ -40,7 +40,7 @@ Different wavelength components of each laser pulse hit the target at different 
 \label{fig:PW2013_Figure3}
 \end{figure}
 
-\section{Applications of Hybrid dispersion laser scanner}
+\section{Applications of hybrid dispersion laser scanner}
 
 In order to visualize the operation of the HDLS, we scanned a high-reflective substrate with letters “UCLA” engraved on it, and compared the results side-by-side with an image taken by a regular CCD camera (Figure \ref{fig:PW2013_Figure4}). For this experiment, the target was 90 degrees rotated around the illumination axis with respect to the images shown, so that the vertical scans in the image are performed by the HDLS while horizontal scans in the image are implemented by the AOD.
 
@@ -73,14 +73,14 @@ We tested the performance of the HDLS and conventional flow cytometer for size-b
  
 \begin{figure}[htb!]
 \centering
-\includegraphics[scale=0.7]{PW2013/Figure7.png}
+\includegraphics[scale=0.67]{PW2013/Figure7.png}
 \caption{Comparison of conventional and HDLS flow cytometers. (a) In regular flow cytometry, a single interrogation beam covers the desired field of view in the channel. Therefore, it does not efficiently differentiate multiple cells such as doublets. In HDLS flow-cytometer, diffraction limited wavelength components of the interrogation beam cover the required field of view, and extract high-resolution spatial information of the sample. HDLS data can be used to identify abnormalities e.g. multiple cells and result in a lower statistical error. (b) In our demonstration of HDLS flow cytometer, an inertial focusing microfluidic channel with a dielectric mirror substrate is used to order randomly distributed cells into a single stream. The microfluidic device was fabricated using standard replica molding methods in thermoset polyester (TPE) to ensure stability. HDLS scan pulses are focused on the stream. Forward-scattered light from the cells is reflected by substrate mirror and collected by an objective lens.}
 \label{fig:PW2013_Figure7}
 \end{figure}
  
 \begin{figure}[htb!]
 \centering
-\includegraphics[scale=1]{PW2013/Figure8.png}
+\includegraphics[scale=0.95]{PW2013/Figure8.png}
 \caption{Experimental results of HDLS flow cytometer. (a) Identical samples of white blood cells and MCF7 breast cancer cells are measured separately with conventional and HDLS flow cytometers. There is a considerable overlap in forward scattering range of these cell types for a conventional flow cytometer. However, this overlap decreases significantly for HDLS flow cytometer measurements because white blood cell multiples are not identified as MCF7 cancer cells. (b) Receiver operating characteristic (ROC) curves based on identification of white blood cells and MCF7 breast cancer cells show that without sacrificing throughput, HDLS flow cytometer achieves higher specificity and sensitivity than a conventional flow cytometer.}
 \label{fig:PW2013_Figure8}
 \end{figure}

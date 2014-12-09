@@ -5,36 +5,36 @@
 \contentsline {section}{\numberline {2.3}Theoretical study of the vibrometer performance}{8}
 \contentsline {section}{\numberline {2.4}Experimental results}{9}
 \contentsline {section}{\numberline {2.5}Conclusion}{9}
-\contentsline {chapter}{\numberline {3}Three-dimensional Ultrafast Laser Scanner}{12}
+\contentsline {chapter}{\numberline {3}Three-dimensional ultrafast laser scanner}{12}
 \contentsline {section}{\numberline {3.1}Introduction}{13}
-\contentsline {section}{\numberline {3.2}Principle of Hybrid dispersion laser scanner}{14}
-\contentsline {section}{\numberline {3.3}Applications of Hybrid dispersion laser scanner}{16}
+\contentsline {section}{\numberline {3.2}Principle of hybrid dispersion laser scanner}{14}
+\contentsline {section}{\numberline {3.3}Applications of hybrid dispersion laser scanner}{16}
 \contentsline {chapter}{\numberline {4}Label-free high-throughput cell screening}{25}
 \contentsline {section}{\numberline {4.1}Introduction}{25}
 \contentsline {section}{\numberline {4.2}Experimental setup}{28}
-\contentsline {section}{\numberline {4.3}Results and discussion}{33}
-\contentsline {section}{\numberline {4.4}Conclusion}{36}
-\contentsline {chapter}{\numberline {5}Optically amplified detection for biomedical sensing and imaging}{37}
-\contentsline {section}{\numberline {5.1}Introduction}{38}
-\contentsline {section}{\numberline {5.2}Raman amplification as an optical postamplifier}{41}
-\contentsline {section}{\numberline {5.3}Limiting noise sources}{43}
-\contentsline {subsection}{\numberline {5.3.1}Double Rayleigh backscattering noise}{43}
-\contentsline {subsection}{\numberline {5.3.2}Pump-to-Stokes relative intensity noise transfer}{44}
-\contentsline {subsection}{\numberline {5.3.3}Amplified spontaneous emission noise}{46}
-\contentsline {subsection}{\numberline {5.3.4}Detection noise}{47}
-\contentsline {section}{\numberline {5.4}Sensitivity analysis}{48}
-\contentsline {subsection}{\numberline {5.4.1}Comparison of various noise components}{48}
-\contentsline {subsection}{\numberline {5.4.2}Signal-to-noise ratio of the detection system enhanced by the Raman amplifier}{51}
-\contentsline {subsection}{\numberline {5.4.3}Sensitivity improvements by the Raman amplifier at various wavelengths}{52}
-\contentsline {section}{\numberline {5.5}Conclusion}{54}
-\contentsline {chapter}{\numberline {6}Raman amplification at 800 nm}{61}
-\contentsline {section}{\numberline {6.1}Introduction}{61}
-\contentsline {section}{\numberline {6.2}Advantages of Raman amplification}{63}
-\contentsline {section}{\numberline {6.3}Experimental demonstration}{63}
-\contentsline {chapter}{\numberline {7}Big data acquisition and processing in high-throughput label-free cell screening}{67}
-\contentsline {section}{\numberline {7.1}Introduction}{67}
-\contentsline {section}{\numberline {7.2}Technical description of the acquisition system}{68}
-\contentsline {section}{\numberline {7.3}Big data acquisition results}{70}
-\contentsline {section}{\numberline {7.4}Conclusion}{72}
-\contentsline {chapter}{\numberline {8}Conclusion and future work}{73}
-\contentsline {chapter}{References}{76}
+\contentsline {section}{\numberline {4.3}Results and discussion}{31}
+\contentsline {section}{\numberline {4.4}Conclusion}{32}
+\contentsline {chapter}{\numberline {5}Optically amplified detection for biomedical sensing and imaging}{38}
+\contentsline {section}{\numberline {5.1}Introduction}{39}
+\contentsline {section}{\numberline {5.2}Raman amplification as an optical postamplifier}{42}
+\contentsline {section}{\numberline {5.3}Limiting noise sources}{44}
+\contentsline {subsection}{\numberline {5.3.1}Double Rayleigh backscattering noise}{44}
+\contentsline {subsection}{\numberline {5.3.2}Pump-to-Stokes relative intensity noise transfer}{45}
+\contentsline {subsection}{\numberline {5.3.3}Amplified spontaneous emission noise}{47}
+\contentsline {subsection}{\numberline {5.3.4}Detection noise}{48}
+\contentsline {section}{\numberline {5.4}Sensitivity analysis}{49}
+\contentsline {subsection}{\numberline {5.4.1}Comparison of various noise components}{49}
+\contentsline {subsection}{\numberline {5.4.2}Signal-to-noise ratio of the detection system enhanced by the Raman amplifier}{52}
+\contentsline {subsection}{\numberline {5.4.3}Sensitivity improvements by the Raman amplifier at various wavelengths}{53}
+\contentsline {section}{\numberline {5.5}Conclusion}{55}
+\contentsline {chapter}{\numberline {6}Raman amplification at 800 nm}{62}
+\contentsline {section}{\numberline {6.1}Introduction}{62}
+\contentsline {section}{\numberline {6.2}Advantages of Raman amplification}{64}
+\contentsline {section}{\numberline {6.3}Experimental demonstration}{64}
+\contentsline {chapter}{\numberline {7}Big data acquisition and processing in high-throughput label-free cell screening}{68}
+\contentsline {section}{\numberline {7.1}Introduction}{68}
+\contentsline {section}{\numberline {7.2}Technical description of the acquisition system}{69}
+\contentsline {section}{\numberline {7.3}Big data acquisition results}{71}
+\contentsline {section}{\numberline {7.4}Conclusion}{73}
+\contentsline {chapter}{\numberline {8}Conclusion and future work}{74}
+\contentsline {chapter}{References}{77}

@@ -98,10 +98,10 @@ Every laser including pump lasers in Raman amplifiers has intensity fluctuations
 
 Using the RIN calculation technique described for a singly-pumped Raman amplifier in Ref. \cite{fludger2001pump}, the transfer function of the pump RIN to the Stokes RIN in bidirectionally pumped Raman amplifiers is found to be
 \begin{eqnarray}
-&&\hspace{-0.7cm}RIN_s(f) = \nonumber\\
-&&\hspace{-0.5cm}\left\{\frac{v_s\left[\alpha_s L + \ln G(L)\right]}{L_{eff}}\right\}^2  
- \left\{RIN_p^f(f) \left[\frac{P_p^f(0)}{P_p^f(0)+P_p^b(L)}\right]^2 \left[\frac{1-2\mathrm{e}^{-\alpha_p L}\cos(bfL/v_s)+\mathrm{e}^{-2 \alpha_p L}}{(\alpha_p v_s)^2+(b f)^2}\right] \right.\nonumber\\
-&&\hspace{-0.5cm} \left.+RIN_p^b(f) \left[\frac{P_p^b(L)}{P_p^f(0)+P_p^b(L)}\right]^2 \left[\frac{1-2\mathrm{e}^{-\alpha_p L}\cos(4 \pi f L/v_s)+\mathrm{e}^{-2 \alpha_p L}}{(\alpha_p v_s)^2+(4 \pi f)^2}\right]\right\},\label{eqn:JOSAA_Equation_10}
+&&\hspace{-1.7cm}RIN_s(f) = \nonumber\\
+&&\hspace{-1.5cm}\left\{\frac{v_s\left[\alpha_s L + \ln G(L)\right]}{L_{eff}}\right\}^2 \nonumber\\
+&&\hspace{-1.5cm}\left\{RIN_p^f(f) \left[\frac{P_p^f(0)}{P_p^f(0)+P_p^b(L)}\right]^2 \left[\frac{1-2\mathrm{e}^{-\alpha_p L}\cos(bfL/v_s)+\mathrm{e}^{-2 \alpha_p L}}{(\alpha_p v_s)^2+(b f)^2}\right] \right.\nonumber\\
+&&\hspace{-1.5cm} \left.+RIN_p^b(f) \left[\frac{P_p^b(L)}{P_p^f(0)+P_p^b(L)}\right]^2 \left[\frac{1-2\mathrm{e}^{-\alpha_p L}\cos(4 \pi f L/v_s)+\mathrm{e}^{-2 \alpha_p L}}{(\alpha_p v_s)^2+(4 \pi f)^2}\right]\right\}, \label{eqn:JOSAA_Equation_10}
 \end{eqnarray}
 where $f$ is the electrical frequency of the detection circuitry (also called the sideband frequency of the optical carrier), $RIN_p^f(f)$ and $RIN_p^b(f)$ are the RIN coefficient of the forward and backward pump lasers, respectively, $v_s$ is the group velocity of the Stokes field, $L_{eff}$ is the effective length of the fiber at the pump wavelength and is given by
 \begin{equation}
@@ -179,15 +179,15 @@ Boltzmann Constant & $k_B$ & J/K & $1.38065 \times 10^{-23}$  \\ \hline
 Elementary Charge & $q$ & C & $1.60218 \times 10^{-19}$  \\ \hline 
 Stokes Wavelength & $\lambda_s$ & nm & 800 \\ \hline
 Pump Wavelength & $\lambda_p$ & nm & 773.2 \\ \hline
-Fiber Attenuation at Stokes Wavelength & $\alpha_s$ & m$^{-1}$ & $5.32 \times 10^{-4}$ \\ \hline
-Fiber Attenuation at Pump Wavelength & $\alpha_p$ & m$^{-1}$ & $6.12 \times 10^{-4}$ \\ \hline
+Fiber Attenuation at Stokes & $\alpha_s$ & m$^{-1}$ & $5.32 \times 10^{-4}$ \\ \hline
+Fiber Attenuation at Pump & $\alpha_p$ & m$^{-1}$ & $6.12 \times 10^{-4}$ \\ \hline
 Raman Gain Coefficient & $g_R$ & m/W & $4.57 \times 10^{-13}$ \\ \hline
-Group Velocity at Stokes Wavelength & $v_s$ & m/s & $2.053373 \times 10^8$ \\ \hline
-Group Velocity at Pump Wavelength & $v_p$ & m/s & $2.052073 \times 10^8$ \\ \hline
-Mode Field Diameter at Stokes Wavelength & $d_s$ & $\mu$m & 5.52 \\ \hline
-Mode Field Diameter at Pump Wavelength & $d_p$ & $\mu$m & 5.34 \\ \hline
+Group Velocity at Stokes & $v_s$ & m/s & $2.053373 \times 10^8$ \\ \hline
+Group Velocity at Pump & $v_p$ & m/s & $2.052073 \times 10^8$ \\ \hline
+Mode Field Diameter at Stokes & $d_s$ & $\mu$m & 5.52 \\ \hline
+Mode Field Diameter at Pump & $d_p$ & $\mu$m & 5.34 \\ \hline
 Fiber Length & $L$ & m & 1040 \\ \hline
-Temperature of Raman Gain Medium (Fiber)& $T_f$ & K & 300 \\ \hline
+Temperature of Fiber& $T_f$ & K & 300 \\ \hline
 Rayleigh Backscattering Coefficient & $r_s$ & km$^{-1}$ & $1.41 \times 10^{-3}$ \\ \hline
 \end{tabular}
 \caption{Parameter values used to evaluate the power of different noise components (continued at Table \ref{tbl:JOSAA2013_Table1_part2}).}
