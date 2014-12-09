@@ -6,16 +6,6 @@
 \usepackage{siunitx}
 \newcommand{\ud}{\,\mathrm{d}} % "\ud" can be used in mathematical expressions to generate a good differential "d" letter in derivatives and integrals. Here, "\," generates a 3/18 quad space (Width of letter "M").
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-% Usually things live in separate flies.
-%
-% \input {prelim}                           % preliminary page info
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%                                                                      %
-%                          PRELIMINARY PAGES                           %
-%                                                                      %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \title          {High-Speed Imaging and Optical Sensing Systems for Biomedical Applications}
@@ -37,48 +27,18 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\dedication     {\textsl{To my parents \ldots \\
-                who---among so many other things--- \\
-                got a loan to buy me a computer \\
-                when I was in high school}}
+\dedication     {\textsl{To my parents, \\
+                Azarjoun and Baba}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\acknowledgments {First and foremost, I would like to express my sincere gratitude to my advisor, Prof. Bahram Jalali, for his immeasurable amount of support and guidance. His patience, vast and deep knowledge of numerous fields, and attention to fundamentals has always inspired me. His training has significantly influenced my character both in professional and personal life. 
-
-Wholeheartedly, I thank Prof. Kayvan Niazi. His knowledge, his passion for teaching, and above all, his spirit has been inspirational. His insightful feedback and guidance, specifically on biological, studies were critical in completing this work. Also, I would like to thank my other committee members, Prof. Tatsuo Itoh, Prof. Katsushi Arisaka, Prof. Benjamin S. Williams, and Prof. Dean Ho, for their invaluable time and feedback.
-
-I would like to thank impressive students and postdocs of Prof. Jalali's research group, who I have learned alot from. Specifically, Keisuke Goda and Daniel Solli had a significant influence on shaping me into a scientist. Also, I am very thankful to Eric Diebold, Kevin K. Tsia, Jost Adam, Ali Fard, Ali Ayazi, Niusha Sarkhosh, Kam Yan Hon, and Alexander Weidel for the helpful discussions that we had. I would like to express my appreciatation for the help of our undergraduate students, especially Allen Huang, Li-Chia Tai, and Jim Lin who have dedicated significant amount of time and effort to my project. Last, but not least, I am truly grateful of my colleague graduate student, Claire Lifan Chen, who has worked with me through good and bad times of many projects. Without her help, I could have never achieved many of my celebrated results.
-
-I would like to thank all of my publication co-authors, which our works consist many chapters of this dissertation, especially Prof. Shahrooz Rabizadeh, Prof. Dino di Carlo, and Dr. Daniel Gossett. Chapter 1 is a version of Applied Physics Letters, Vol. 98, No. 10, 101107, 2011. Chapter 2 is a version of Proceedings of SPIE, Frontiers in Ultrafast Optics: Biomedical, Scientific, and Industrial Applications XIII, San Francisco, CA, 2013, 86110N, which is a collaborative work between Prof. Bahram Jalali and Prof. Dino di Carlo’s groups. Chapter 3 is a version of Biomedical Optics Express, Vol. 4, No. 9, pp. 1618-1625, 2013. Chapter 4 is a version of Journal of the Optical Society of America A, Vol. 30, No. 10, pp. 2124-2132, 2013. Finally, Chapter 5 is a version of Conference on Lasers and Electro-Optics (CLEO), San Jose, CA, 2010, CFA4.
-
-I also had many great mentors over the course of my undergraduate education who led me to this PhD in Electrical Engineering. In particular, I am very grateful of Prof. Mahmoud Shahabadi, Prof. Mohammad Yavari, and Prof. Zainalabedin Navabi. 
-
-Furthermore, I would like to thank my friends Yunan Zhu and Zohreh Khodaparast whose support gave me the strength, energy, and drive to go through difficulties of this program. Finally, I would like to thank my roommate, Arash Mirhaj for productive technical and non-technical discussions over many late night working hours. 
-
-Most important of all, I am supremely grateful to my family for their unconditional love and support. They have sacrificed so much for me to be here. My mom, Azarjoun, has been my role model for being reliable, hardworking, and hopeful while I learned being thorough from my dad. My sister, Maryam has been a constant source of love, and My brother, Ali has always supported my curiosity... Azarjoun, Baba, Maryam, and Ali! You helped me whenever I needed it. Thank you for always being there.
-}
+\input {acknowledgments}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%
 % UCLA Policy on Vita
 % For security reasons, UCLA policy specifies that your birth year and birth place should not be included in your vita.
-%
-\vitaitem   {2005}
-                {Intern, Department of Electrical Energy, Systems and Automation, Gent University, Belgium.}
-\vitaitem   {2006}
-                {B.Sc., Electrical Engineering, University of Tehran, Iran.}
-\vitaitem   {2008}
-                {M.Sc., Electrical Engineering, University of Tehran, Iran.}
-\vitaitem   {2009--2011}
-                {Teaching Assistant, Electrical Engineering Department, UCLA.}
-\vitaitem   {2013--2014}
-                {Teaching Associate, Electrical Engineering Department, UCLA.}
-\vitaitem   {2009--present}
-                {Graduate Student Researcher, Electrical Engineering Department, UCLA.}
-\vitaitem   {2010--present}
-                {Graduate Student Researcher, California NanoSystems Institute, Los Angeles.}
+\input {vita}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -86,15 +46,8 @@ Most important of all, I am supremely grateful to my family for their unconditio
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\abstract {
-High-throughput real-time optical sensing and imaging instruments for capture and analysis of fast phenomena are among the most essential tools for scientific, industrial, military, and most importantly biomedical applications. The key challenge in these instruments is the fundamental trade-off between speed and sensitivity of the measurement due to the limited signal energy collected in each measurement window. Based on two enabling technologies, namely photonic time-stretch dispersive Fourier transform and optical post-amplification, we developed several novel high-throughput optical measurement tools for applications such as flow cytometry, vibrometry, and volumetric scanning.
+\input {abstract}
 
-We demonstrated optical Raman amplification at about 800 nm wavelength for the first time and extended time-stretch dispersive Fourier transform to this region of electromagnetic spectrum. We used this empowering technology to make an ultrafast three-dimensional laser scanner with about hundred thousand scans per second. Our technique substantially improves the speed of laser scanners by performing an inertia-free scan in one of the dimensions through mapping of that spatial dimension to spectrum and subsequently time and optically amplifying the interrogation optical signals before photodetection to achieve superior sensitivity. The performance of our laser scanner proved to achieve nanometer-scale axial resolution in measurement of surface vibrations with no need for a feedback stabilization mechanism.
-
-We also employed our high-speed laser scanner to perform label-free cell screening in flow. One of the fundamental challenges in cell analysis is the change in cell behavior induced by the labels, which are used to mark them for better identification. To eliminate the need for cell labeling, while keeping the cell classification accuracy high, additional label-free biophysical parameters such as accurate measurement of the cell protein density is required. We introduced a high-accuracy label-free imaging flow cytometer based on simultaneous measurement of morphology and optical path length through the cell at flow speeds as high as a few meters per second. 
-
-Finally, the ultimate challenge in the ultra-high-throughput instrumentation is the storage and analysis of the torrent of data generated. As an example, our imaging flow cytometer generates tens of terabytes of cell images over a course of three hours acquisition, which captures images of every single cell in ten milliliters of sample e.g. blood. We enabled practical use of these big data volumes and velocities by efficient combination of analog preprocessing steps such as quadrature demodulation with parallel digital post processing.
-}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin {document}
@@ -104,12 +57,14 @@ Finally, the ultimate challenge in the ultra-high-throughput instrumentation is 
 %
 % Ordinarily each chapter (at least) is in a separate file.
 %
-%\input {Introduction}                         % Chapter 1 of dissertation
+\input {Introduction}                         % Chapter 1 of dissertation
 \input {APL2011/APL2011}                         % Chapter 2
 \input {PW2013/PW2013}                         % etc.
 \input {BOE2013/BOE2013}
 \input {JOSAA2013/JOSAA2013}
 \input {CLEO2010/CLEO2010}
+\input {CLEO2015/CLEO2015}
+\input {Conclusion}
 
 %\bibliography {bib/network,bib/naming}    % bibliography references
 %\bibliographystyle {thesis}

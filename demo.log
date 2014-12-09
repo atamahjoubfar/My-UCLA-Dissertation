@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/W32TeX) (preloaded format=pdflatex 2014.11.27)  2 DEC 2014 04:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/W32TeX) (preloaded format=pdflatex 2014.11.27)  9 DEC 2014 06:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -436,21 +436,22 @@ Variant \prop_get:NVNTF already defined; not changing it on line 374
 Package: translator 2010/06/12 ver 1.10
 
 (c:/texlive/2014/texmf-dist/tex/latex/beamer/translator/translator-language-map
-pings.tex))) (./publications.tex) (./demo.aux)
+pings.tex))) (./acknowledgments.tex) (./vita.tex) (./publications.tex)
+(./abstract.tex) (./demo.aux)
 \openout1 = `demo.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 100.
-LaTeX Font Info:    ... okay on input line 100.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 100.
-LaTeX Font Info:    ... okay on input line 100.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 100.
-LaTeX Font Info:    ... okay on input line 100.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 100.
-LaTeX Font Info:    ... okay on input line 100.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 100.
-LaTeX Font Info:    ... okay on input line 100.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 100.
-LaTeX Font Info:    ... okay on input line 100.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
 
 (c:/texlive/2014/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -527,14 +528,13 @@ File: siunitx-abbreviations.cfg 2014/10/28 v2.6d siunitx: Abbreviated units
 
 
 {c:/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 101.
-
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 54.
 
 (c:/texlive/2014/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 101.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 54.
  [1
 
 ] [2
@@ -551,7 +551,7 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 \openout3 = `demo.toc'.
 
  [7] (./demo.lof
-Overfull \hbox (4.9196pt too wide) in paragraph at lines 4--4
+Overfull \hbox (4.9196pt too wide) in paragraph at lines 5--5
  [][] []\OT1/cmr/m/n/12 Surface vi-bra-tion of the acous-tic di-aphragm cap-tur
 ed by the STEAM 
  []
@@ -561,11 +561,7 @@ Missing character: There is no Ä in font cmr12!
 Missing character: There is no ô in font cmr12!
 [8
 
-] [9]
-Missing character: There is no ‚ in font cmr12!
-Missing character: There is no Ä in font cmr12!
-Missing character: There is no ô in font cmr12!
- [10]
+] [9] [10]
 Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
 Missing character: There is no ú in font cmr12!
@@ -578,176 +574,163 @@ Missing character: There is no ú in font cmr12!
 Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
 Missing character: There is no ù in font cmr12!
- [11] [12] [13]
-Missing character: There is no Œ in font cmr12!
-Missing character: There is no º in font cmr12!
-Missing character: There is no ¬ in font cmr12!
-Missing character: There is no µ in font cmr12!
- [14]
-Missing character: There is no ‚ in font cmr12!
-Missing character: There is no Ä in font cmr12!
-Missing character: There is no ì in font cmr12!
- [15] [16]
-Missing character: There is no ‚ in font cmr12!
-Missing character: There is no Ä in font cmr12!
-Missing character: There is no ì in font cmr12!
-Missing character: There is no ‚ in font cmr12!
-Missing character: There is no Ä in font cmr12!
-Missing character: There is no ì in font cmr12!
+ [11] [12] [13] [14] [15] [16]
+Overfull \hbox (5.7682pt too wide) in paragraph at lines 33--33
+ \OT1/cmr/m/n/12 nal pro-cess-ing sys-tem for re-duc-ing the data rate of Coher
+ent-STEAM 
+ []
+
+[17]
+Overfull \hbox (0.12251pt too wide) in paragraph at lines 35--35
+ \OT1/cmr/m/n/12 phase and in-ten-sity im-ages for two dif-fer-ent sets of OT-I
+I hy-bridoma 
+ []
+
 )
 \tf@lof=\write4
 \openout4 = `demo.lof'.
 
- [17] [18] (./demo.lot)
+ [18] (./demo.lot)
 \tf@lot=\write5
 \openout5 = `demo.lot'.
 
  [19
 
-]
-Missing character: There is no ‚ in font cmr12!
-Missing character: There is no Ä in font cmr12!
-Missing character: There is no ô in font cmr12!
-
-[20] [21]
-Underfull \hbox (badness 7064) in paragraph at lines 101--101
+] [20] [21]
+Underfull \hbox (badness 7064) in paragraph at lines 54--54
 []\OT1/cmr/m/n/12 Teaching As-so-ciate, Elec-tri-cal En-gi-neer-ing De-part-men
 t,
  []
 
 
-Overfull \hbox (2.38628pt too wide) in paragraph at lines 101--101
+Overfull \hbox (2.38628pt too wide) in paragraph at lines 54--54
 []
  []
 
 
-Overfull \hbox (2.38628pt too wide) in paragraph at lines 101--101
+Overfull \hbox (2.38628pt too wide) in paragraph at lines 54--54
 []
  []
 
 
-Overfull \hbox (2.38628pt too wide) in paragraph at lines 101--101
+Overfull \hbox (2.38628pt too wide) in paragraph at lines 54--54
 []
  []
 
 
-Overfull \hbox (2.38628pt too wide) in paragraph at lines 101--101
+Overfull \hbox (2.38628pt too wide) in paragraph at lines 54--54
 []
  []
 
 
-Overfull \hbox (2.38628pt too wide) in paragraph at lines 101--101
+Overfull \hbox (2.38628pt too wide) in paragraph at lines 54--54
 []
  []
 
 
-Overfull \hbox (2.38628pt too wide) in paragraph at lines 101--101
+Overfull \hbox (2.38628pt too wide) in paragraph at lines 54--54
 []
  []
 
 
-Overfull \hbox (2.38628pt too wide) in paragraph at lines 101--101
+Overfull \hbox (2.38628pt too wide) in paragraph at lines 54--54
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 101--101
+Underfull \hbox (badness 10000) in paragraph at lines 54--54
 
  []
 
 [22
 
 ] [23]
-Overfull \hbox (2.09366pt too wide) in paragraph at lines 101--101
+Overfull \hbox (2.09366pt too wide) in paragraph at lines 54--54
 \OT1/cmr/m/it/12 Through-put Sin-gle Cell Imag-ing,\OT1/cmr/m/n/12 '' Fron-tier
 s in Op-tics, Or-lando, FL, 2013, FW1D.2. 
  []
 
-[24] [25] [26] (./APL2011/APL2011.tex
+[24] [25] [26] (./Introduction.tex
 CHAPTER 1.
 [1
 
-]
-Missing character: There is no ‚ in font cmr12!
-Missing character: There is no Ä in font cmr12!
-Missing character: There is no ì in font cmr12!
-Missing character: There is no ‚ in font cmr12!
-Missing character: There is no Ä in font cmr12!
-Missing character: There is no ì in font cmr12!
-Missing character: There is no ‚ in font cmr12!
-Missing character: There is no Ä in font cmr12!
-Missing character: There is no ô in font cmr12!
+]) (./APL2011/APL2011.tex [2] [3]
+CHAPTER 2.
+[4
 
-Overfull \hbox (7.50839pt too wide) in paragraph at lines 13--14
+]
+Overfull \hbox (7.50839pt too wide) in paragraph at lines 14--15
 \OT1/cmr/m/n/12 achieves high-speed imaging-based sur-face vi-bra-tion mea-sure
 -ments with nanometer-
  []
 
-[2] <APL2011/Figure1.png, id=102, 326.2005pt x 267.399pt>
+[5] <APL2011/Figure1.png, id=113, 326.2005pt x 267.399pt>
 File: APL2011/Figure1.png Graphic file (type png)
 
 <use APL2011/Figure1.png>
-Package pdftex.def Info: APL2011/Figure1.png used on input line 21.
+Package pdftex.def Info: APL2011/Figure1.png used on input line 22.
 (pdftex.def)             Requested size: 326.19969pt x 267.39835pt.
- [3] [4 <./APL2011/Figure1.png>] [5]
-<APL2011/Figure2.png, id=117, 325.215pt x 423.4365pt>
+ [6] [7 <./APL2011/Figure1.png>] [8]
+<APL2011/Figure2.png, id=126, 325.215pt x 423.4365pt>
 File: APL2011/Figure2.png Graphic file (type png)
 
 <use APL2011/Figure2.png>
-Package pdftex.def Info: APL2011/Figure2.png used on input line 38.
+Package pdftex.def Info: APL2011/Figure2.png used on input line 39.
 (pdftex.def)             Requested size: 325.2142pt x 423.43546pt.
 
-<APL2011/Figure3.png, id=118, 325.215pt x 227.6505pt>
+<APL2011/Figure3.png, id=127, 325.215pt x 227.6505pt>
 File: APL2011/Figure3.png Graphic file (type png)
 
 <use APL2011/Figure3.png>
-Package pdftex.def Info: APL2011/Figure3.png used on input line 47.
+Package pdftex.def Info: APL2011/Figure3.png used on input line 48.
 (pdftex.def)             Requested size: 325.2142pt x 227.64993pt.
 
-<APL2011/Figure4.png, id=119, 325.215pt x 227.6505pt>
+<APL2011/Figure4.png, id=128, 325.215pt x 227.6505pt>
 File: APL2011/Figure4.png Graphic file (type png)
 
 <use APL2011/Figure4.png>
-Package pdftex.def Info: APL2011/Figure4.png used on input line 56.
+Package pdftex.def Info: APL2011/Figure4.png used on input line 57.
 (pdftex.def)             Requested size: 325.2142pt x 227.64993pt.
- [6]) (./PW2013/PW2013.tex [7 <./APL2011/Figure2.png>] [8 <./APL2011/Figure3.pn
-g> <./APL2011/Figure4.png>]
-CHAPTER 2.
-[9
+ [9]) (./PW2013/PW2013.tex [10 <./APL2011/Figure2.png>] [11 <./APL2011/Figure3.
+png> <./APL2011/Figure4.png>]
+CHAPTER 3.
+[12
 
-] [10] <PW2013/Figure1.png, id=136, 534.3162pt x 179.7114pt>
+] [13] <PW2013/Figure1.png, id=145, 534.3162pt x 179.7114pt>
 File: PW2013/Figure1.png Graphic file (type png)
 
 <use PW2013/Figure1.png>
-Package pdftex.def Info: PW2013/Figure1.png used on input line 19.
+Package pdftex.def Info: PW2013/Figure1.png used on input line 20.
 (pdftex.def)             Requested size: 347.3014pt x 116.811pt.
 Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
 Missing character: There is no ô in font cmr12!
- [11]
+ <PW2013/Figure2.png, id=146, 583.4598pt x 359.4228pt>
+File: PW2013/Figure2.png Graphic file (type png)
+
+<use PW2013/Figure2.png>
+Package pdftex.def Info: PW2013/Figure2.png used on input line 29.
+(pdftex.def)             Requested size: 379.24437pt x 233.62204pt.
+ [14]
+<PW2013/Figure3.png, id=150, 641.39626pt x 197.23688pt>
+File: PW2013/Figure3.png Graphic file (type png)
+
+<use PW2013/Figure3.png>
+Package pdftex.def Info: PW2013/Figure3.png used on input line 38.
+(pdftex.def)             Requested size: 416.90262pt x 128.20244pt.
+
+Overfull \hbox (1.35013pt too wide) in paragraph at lines 38--39
+ [][] 
+ []
+
 Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
 Missing character: There is no ú in font cmr12!
 Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
 Missing character: There is no ù in font cmr12!
- [12 <./PW2013/Figure1.png>]
-<PW2013/Figure2.png, id=144, 583.4598pt x 359.4228pt>
-File: PW2013/Figure2.png Graphic file (type png)
- <use PW2013/Figure2.png>
-Package pdftex.def Info: PW2013/Figure2.png used on input line 34.
-(pdftex.def)             Requested size: 379.24437pt x 233.62204pt.
-
-<PW2013/Figure3.png, id=145, 615.7404pt x 189.3474pt>
-File: PW2013/Figure3.png Graphic file (type png)
- <use PW2013/Figure3.png>
-Package pdftex.def Info: PW2013/Figure3.png used on input line 42.
-(pdftex.def)             Requested size: 400.22652pt x 123.07434pt.
-Missing character: There is no ‚ in font cmr12!
-Missing character: There is no Ä in font cmr12!
-Missing character: There is no ô in font cmr12!
-
-<PW2013/Figure4.png, id=146, 447.1104pt x 224.037pt>
+[15 <./PW2013/Figure1.png>]
+<PW2013/Figure4.png, id=155, 447.1104pt x 224.037pt>
 File: PW2013/Figure4.png Graphic file (type png)
  <use PW2013/Figure4.png>
 Package pdftex.def Info: PW2013/Figure4.png used on input line 49.
@@ -765,249 +748,252 @@ Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
 Missing character: There is no ù in font cmr12!
 
-<PW2013/Figure5.png, id=147, 490.4724pt x 264.99pt>
+<PW2013/Figure5.png, id=156, 490.4724pt x 264.99pt>
 File: PW2013/Figure5.png Graphic file (type png)
  <use PW2013/Figure5.png>
-Package pdftex.def Info: PW2013/Figure5.png used on input line 57.
+Package pdftex.def Info: PW2013/Figure5.png used on input line 58.
 (pdftex.def)             Requested size: 416.9035pt x 225.24255pt.
 
-Overfull \hbox (1.35101pt too wide) in paragraph at lines 57--58
+Overfull \hbox (1.35101pt too wide) in paragraph at lines 58--59
  [][] 
  []
 
-<PW2013/Figure6.png, id=148, 606.1044pt x 617.1858pt>
+<PW2013/Figure6.png, id=157, 606.1044pt x 617.1858pt>
 File: PW2013/Figure6.png Graphic file (type png)
  <use PW2013/Figure6.png>
-Package pdftex.def Info: PW2013/Figure6.png used on input line 64.
+Package pdftex.def Info: PW2013/Figure6.png used on input line 65.
 (pdftex.def)             Requested size: 412.14554pt x 419.68079pt.
 Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
 Missing character: There is no ô in font cmr12!
 
-<PW2013/Figure7.png, id=149, 628.749pt x 499.6266pt>
+[16] <PW2013/Figure7.png, id=162, 628.749pt x 312.6882pt>
 File: PW2013/Figure7.png Graphic file (type png)
- <use PW2013/Figure7.png>
-Package pdftex.def Info: PW2013/Figure7.png used on input line 75.
-(pdftex.def)             Requested size: 157.18686pt x 124.90634pt.
 
-[13]) (./BOE2013/BOE2013.tex [14] [15 <./PW2013/Figure2.png>] [16 <./PW2013/Fig
-ure3.png>] [17 <./PW2013/Figure4.png>] [18 <./PW2013/Figure5.png>] [19 <./PW201
-3/Figure6.png>] [20 <./PW2013/Figure7.png>]
-CHAPTER 3.
-[21
+<use PW2013/Figure7.png>
+Package pdftex.def Info: PW2013/Figure7.png used on input line 76.
+(pdftex.def)             Requested size: 440.12129pt x 218.88023pt.
 
-] [22] [23] <BOE2013/Figure1.png, id=192, 246.0465pt x 326.8575pt>
+Overfull \hbox (24.5688pt too wide) in paragraph at lines 76--77
+ [][] 
+ []
+
+<PW2013/Figure8.png, id=163, 414.8298pt x 361.35pt>
+File: PW2013/Figure8.png Graphic file (type png)
+ <use PW2013/Figure8.png>
+Package pdftex.def Info: PW2013/Figure8.png used on input line 83.
+(pdftex.def)             Requested size: 414.82878pt x 361.34912pt.
+)
+(./BOE2013/BOE2013.tex [17] [18 <./PW2013/Figure2.png>] [19 <./PW2013/Figure3.p
+ng>] [20 <./PW2013/Figure4.png>] [21 <./PW2013/Figure5.png>] [22 <./PW2013/Figu
+re6.png>] [23 <./PW2013/Figure7.png>] [24 <./PW2013/Figure8.png>]
+CHAPTER 4.
+[25
+
+] [26] [27] <BOE2013/Figure1.png, id=206, 246.0465pt x 326.8575pt>
 File: BOE2013/Figure1.png Graphic file (type png)
 
 <use BOE2013/Figure1.png>
-Package pdftex.def Info: BOE2013/Figure1.png used on input line 21.
+Package pdftex.def Info: BOE2013/Figure1.png used on input line 22.
 (pdftex.def)             Requested size: 246.04588pt x 326.85669pt.
-Missing character: There is no Œ in font cmr12!
-Missing character: There is no º in font cmr12!
 
-Overfull \hbox (0.75014pt too wide) in paragraph at lines 26--27
+Overfull \hbox (0.75014pt too wide) in paragraph at lines 27--28
 []\OT1/cmr/m/n/12 Free-space laser pulses are lin-early po-lar-ized with quarte
 r- and half-wave plates,
  []
 
-[24]
+[28]
 
-LaTeX Warning: Text page 25 contains only floats.
+LaTeX Warning: Text page 29 contains only floats.
 
 
 Overfull \vbox (1.48462pt too high) has occurred while \output is active []
 
 
-[25 <./BOE2013/Figure1.png>]
-Missing character: There is no ‚ in font cmr12!
-Missing character: There is no Ä in font cmr12!
-Missing character: There is no ô in font cmr12!
- [26]
-<BOE2013/Figure2.png, id=203, 362.3355pt x 214.5105pt>
+[29 <./BOE2013/Figure1.png>] [30]
+<BOE2013/Figure2.png, id=218, 553.56813pt x 327.72438pt>
 File: BOE2013/Figure2.png Graphic file (type png)
 
 <use BOE2013/Figure2.png>
-Package pdftex.def Info: BOE2013/Figure2.png used on input line 42.
-(pdftex.def)             Requested size: 362.3346pt x 214.50996pt.
- [27]
-Missing character: There is no Œ in font cmr12!
-Missing character: There is no º in font cmr12!
- [28 <./BOE2013/Figure2.png>]
-<BOE2013/Figure3.png, id=213, 360.693pt x 113.9895pt>
+Package pdftex.def Info: BOE2013/Figure2.png used on input line 43.
+(pdftex.def)             Requested size: 415.17508pt x 245.79268pt.
+ [31] [32 <./BOE2013/Figure2.png>]
+<BOE2013/Figure3.png, id=227, 360.693pt x 113.9895pt>
 File: BOE2013/Figure3.png Graphic file (type png)
 
 <use BOE2013/Figure3.png>
-Package pdftex.def Info: BOE2013/Figure3.png used on input line 64.
+Package pdftex.def Info: BOE2013/Figure3.png used on input line 65.
 (pdftex.def)             Requested size: 360.69211pt x 113.98921pt.
-Missing character: There is no Œ in font cmr12!
-Missing character: There is no º in font cmr12!
-Missing character: There is no ¬ in font cmr12!
-Missing character: There is no µ in font cmr12!
-Missing character: There is no Œ in font cmr12!
-Missing character: There is no º in font cmr12!
-Missing character: There is no Œ in font cmr12!
-Missing character: There is no º in font cmr12!
-Missing character: There is no Œ in font cmr12!
-Missing character: There is no º in font cmr12!
- [29 <./BOE2013/Figure3.png>] [30]
-<BOE2013/Figure4.png, id=220, 521.7894pt x 327.1422pt>
+ [33 <./BOE2013/Figure3.png>] [34]
+<BOE2013/Figure4.png, id=235, 543.53062pt x 340.77313pt>
 File: BOE2013/Figure4.png Graphic file (type png)
 
 <use BOE2013/Figure4.png>
-Package pdftex.def Info: BOE2013/Figure4.png used on input line 77.
-(pdftex.def)             Requested size: 339.15909pt x 212.6399pt.
-) (./JOSAA2013/JOSAA2013.tex [31 <./BOE2013/Figure4.png>] [32]
-CHAPTER 4.
-Missing character: There is no ‚ in font cmr12!
-Missing character: There is no Ä in font cmr12!
-Missing character: There is no ô in font cmr12!
-[33
+Package pdftex.def Info: BOE2013/Figure4.png used on input line 78.
+(pdftex.def)             Requested size: 407.64696pt x 255.57921pt.
+) (./JOSAA2013/JOSAA2013.tex [35 <./BOE2013/Figure4.png>] [36]
+CHAPTER 5.
+[37
 
-] [34]
-
-LaTeX Warning: Citation `mahjoubfar2011' on page 35 undefined on input line 12.
-
-
-<JOSAA2013/Figure1.png, id=235, 495.7065pt x 368.2485pt>
+] [38] <JOSAA2013/Figure1.png, id=249, 495.7065pt x 368.2485pt>
 File: JOSAA2013/Figure1.png Graphic file (type png)
 
 <use JOSAA2013/Figure1.png>
-Package pdftex.def Info: JOSAA2013/Figure1.png used on input line 16.
+Package pdftex.def Info: JOSAA2013/Figure1.png used on input line 17.
 (pdftex.def)             Requested size: 421.35251pt x 313.01271pt.
 
-Overfull \hbox (5.80002pt too wide) in paragraph at lines 16--17
+Overfull \hbox (5.80002pt too wide) in paragraph at lines 17--18
  [][] 
  []
 
-Missing character: There is no ‚ in font cmr12!
-Missing character: There is no Ä in font cmr12!
-Missing character: There is no ì in font cmr12!
-[35]
-Missing character: There is no ‚ in font cmr12!
-Missing character: There is no Ä in font cmr12!
-Missing character: There is no ì in font cmr12!
-Missing character: There is no ‚ in font cmr12!
-Missing character: There is no Ä in font cmr12!
-Missing character: There is no ì in font cmr12!
- [36] <JOSAA2013/Figure2.png, id=242, 248.0175pt x 278.8965pt>
+[39] [40] <JOSAA2013/Figure2.png, id=257, 248.0175pt x 278.8965pt>
 File: JOSAA2013/Figure2.png Graphic file (type png)
 
 <use JOSAA2013/Figure2.png>
-Package pdftex.def Info: JOSAA2013/Figure2.png used on input line 37.
+Package pdftex.def Info: JOSAA2013/Figure2.png used on input line 38.
 (pdftex.def)             Requested size: 248.01688pt x 278.89581pt.
- [37] [38] [39]
-Overfull \hbox (48.71019pt too wide) in alignment at lines 99--104
+ [41] [42] [43]
+Overfull \hbox (48.71019pt too wide) in alignment at lines 100--105
  [][][] []
  []
 
-[40] [41] [42] [43] [44]
-Overfull \hbox (31.48553pt too wide) in paragraph at lines 174--192
+[44] [45] [46] [47] [48]
+Overfull \hbox (31.48553pt too wide) in paragraph at lines 175--193
  [][] 
  []
 
-[45] <JOSAA2013/Figure3.png, id=272, 248.0175pt x 186.9165pt>
+[49] <JOSAA2013/Figure3.png, id=287, 248.0175pt x 186.9165pt>
 File: JOSAA2013/Figure3.png Graphic file (type png)
 
 <use JOSAA2013/Figure3.png>
-Package pdftex.def Info: JOSAA2013/Figure3.png used on input line 229.
+Package pdftex.def Info: JOSAA2013/Figure3.png used on input line 230.
 (pdftex.def)             Requested size: 248.01688pt x 186.91603pt.
-Missing character: There is no ‚ in font cmr12!
-Missing character: There is no Ä in font cmr12!
-Missing character: There is no ì in font cmr12!
-Missing character: There is no ‚ in font cmr12!
-Missing character: There is no Ä in font cmr12!
-Missing character: There is no ì in font cmr12!
- [46] [47]
-Missing character: There is no ‚ in font cmr12!
-Missing character: There is no Ä in font cmr12!
-Missing character: There is no ì in font cmr12!
-
-<JOSAA2013/Figure4.png, id=280, 248.0175pt x 179.361pt>
+ [50] [51]
+<JOSAA2013/Figure4.png, id=294, 248.0175pt x 179.361pt>
 File: JOSAA2013/Figure4.png Graphic file (type png)
 
 <use JOSAA2013/Figure4.png>
-Package pdftex.def Info: JOSAA2013/Figure4.png used on input line 251.
+Package pdftex.def Info: JOSAA2013/Figure4.png used on input line 252.
 (pdftex.def)             Requested size: 248.01688pt x 179.36053pt.
-Missing character: There is no ‚ in font cmr12!
-Missing character: There is no Ä in font cmr12!
-Missing character: There is no ì in font cmr12!
-Missing character: There is no ‚ in font cmr12!
-Missing character: There is no Ä in font cmr12!
-Missing character: There is no ì in font cmr12!
- [48] [49]
-<JOSAA2013/Figure5.png, id=287, 248.0175pt x 384.6735pt>
+ [52] [53]
+<JOSAA2013/Figure5.png, id=302, 248.0175pt x 384.6735pt>
 File: JOSAA2013/Figure5.png Graphic file (type png)
 
 <use JOSAA2013/Figure5.png>
-Package pdftex.def Info: JOSAA2013/Figure5.png used on input line 296.
+Package pdftex.def Info: JOSAA2013/Figure5.png used on input line 297.
 (pdftex.def)             Requested size: 248.01688pt x 384.67253pt.
-) (./CLEO2010/CLEO2010.tex [50] [51 <./JOSAA2013/Figure1.png>] [52 <./JOSAA2013
-/Figure2.png>] [53 <./JOSAA2013/Figure3.png>]
-[54 <./JOSAA2013/Figure4.png>] [55] [56 <./JOSAA2013/Figure5.png>]
-CHAPTER 5.
+) (./CLEO2010/CLEO2010.tex [54] [55 <./JOSAA2013/Figure1.png>] [56 <./JOSAA2013
+/Figure2.png>] [57 <./JOSAA2013/Figure3.png>]
+[58 <./JOSAA2013/Figure4.png>] [59] [60 <./JOSAA2013/Figure5.png>]
+CHAPTER 6.
 
-Overfull \hbox (14.98055pt too wide) in paragraph at lines 7--8
+Overfull \hbox (14.98055pt too wide) in paragraph at lines 8--9
 \OT1/cmr/m/n/12 Fast real-time op-ti-cal sen-sors have nu-mer-ous ap-pli-ca-tio
 ns such as pattern-recognition,
  []
 
-[57
+[61
 
-]
-Missing character: There is no ‚ in font cmr12!
-Missing character: There is no Ä in font cmr12!
-Missing character: There is no ì in font cmr12!
-Missing character: There is no ‚ in font cmr12!
-Missing character: There is no Ä in font cmr12!
-Missing character: There is no ì in font cmr12!
- [58]
-Missing character: There is no Œ in font cmr12!
-Missing character: There is no º in font cmr12!
- [59] <CLEO2010/Figure1.png, id=325, 686.0832pt x 261.1356pt>
+] [62] [63] <CLEO2010/Figure1.png, id=339, 329.5512pt x 261.1356pt>
 File: CLEO2010/Figure1.png Graphic file (type png)
 
 <use CLEO2010/Figure1.png>
-Package pdftex.def Info: CLEO2010/Figure1.png used on input line 27.
-(pdftex.def)             Requested size: 377.34692pt x 143.62502pt.
- [60 <./CLEO2010/Figure1.png>]) (./demo.bbl [61]
-[62
+Package pdftex.def Info: CLEO2010/Figure1.png used on input line 28.
+(pdftex.def)             Requested size: 329.55037pt x 261.13495pt.
+ [64 <./CLEO2010/Figure1.png>]
+<CLEO2010/Figure2.png, id=345, 367.1316pt x 229.3368pt>
+File: CLEO2010/Figure2.png Graphic file (type png)
 
-] [63] [64]
+<use CLEO2010/Figure2.png>
+Package pdftex.def Info: CLEO2010/Figure2.png used on input line 37.
+(pdftex.def)             Requested size: 367.13069pt x 229.33624pt.
+ [65 <./CLEO2010/Figure2.png>]
+<CLEO2010/Figure3.png, id=350, 3952.26563pt x 2218.53844pt>
+File: CLEO2010/Figure3.png Graphic file (type png)
+
+<use CLEO2010/Figure3.png>
+Package pdftex.def Info: CLEO2010/Figure3.png used on input line 46.
+(pdftex.def)             Requested size: 434.75056pt x 244.03998pt.
+
+Overfull \hbox (19.19807pt too wide) in paragraph at lines 46--47
+ [][] 
+ []
+
+) (./CLEO2015/CLEO2015.tex [66 <./CLEO2010/Figure3.png
+
+pdfTeX warning: pdflatex.exe (file ./CLEO2010/Figure3.png): large interlaced PN
+G might cause out of memory (use non-interlaced PNG to fix this)
+>]
+CHAPTER 7.
+[67
+
+] <CLEO2015/Figure1.png, id=357, 394.97563pt x 157.08687pt>
+File: CLEO2015/Figure1.png Graphic file (type png)
+
+<use CLEO2015/Figure1.png>
+Package pdftex.def Info: CLEO2015/Figure1.png used on input line 16.
+(pdftex.def)             Requested size: 315.98093pt x 125.66965pt.
+ [68 <./CLEO2015/Figure1.png>]
+<CLEO2015/Figure2.png, id=362, 699.5736pt x 407.6028pt>
+File: CLEO2015/Figure2.png Graphic file (type png)
+
+<use CLEO2015/Figure2.png>
+Package pdftex.def Info: CLEO2015/Figure2.png used on input line 25.
+(pdftex.def)             Requested size: 405.75296pt x 236.40977pt.
+ [69 <./CLEO2015/Figure2.png>]
+<CLEO2015/Figure3.png, id=367, 704.3916pt x 366.6498pt>
+File: CLEO2015/Figure3.png Graphic file (type png)
+
+<use CLEO2015/Figure3.png>
+Package pdftex.def Info: CLEO2015/Figure3.png used on input line 39.
+(pdftex.def)             Requested size: 408.54742pt x 212.65701pt.
+ [70 <./CLEO2015/Figure3.png>]
+<CLEO2015/Figure4.png, id=373, 664.884pt x 336.7782pt>
+File: CLEO2015/Figure4.png Graphic file (type png)
+
+<use CLEO2015/Figure4.png>
+Package pdftex.def Info: CLEO2015/Figure4.png used on input line 52.
+(pdftex.def)             Requested size: 398.93349pt x 202.06847pt.
+ [71 <./CLEO2015/Figure4.png>]) (./Conclusion.tex
+[72]
+CHAPTER 8.
+[73
+
+] [74]) (./demo.bbl [75] [76
+
+] [77] [78]
 Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ñ in font cmr12!
 Missing character: There is no ¢ in font cmr12!
- [65]
+ [79]
 Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
 Missing character: There is no † in font cmr12!
- [66] [67] [68] [69]) [70] (./demo.aux)
-
-LaTeX Warning: There were undefined references.
-
- ) 
+ [80] [81] [82] [83]) [84]
+(./demo.aux) ) 
 Here is how much of TeX's memory you used:
- 10858 strings out of 493109
- 230911 string characters out of 6138580
- 271829 words of memory out of 5000000
- 14208 multiletter control sequences out of 15000+600000
+ 10918 strings out of 493109
+ 232175 string characters out of 6138580
+ 266421 words of memory out of 5000000
+ 14250 multiletter control sequences out of 15000+600000
  11976 words of font info for 44 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  38i,10n,39p,10584b,534s stack positions out of 5000i,500n,10000p,200000b,80000s
-<c:/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/tex
-live/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><c:/texlive/201
-4/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2014/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2014/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmmi6.pfb><c:/texlive/2014/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmmi8.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmr12.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8
-.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb><c:/
-texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2
-014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2014/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on demo.pdf (97 pages, 5230190 bytes).
+<c:/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12
+.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><c:
+/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/
+2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2014/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/texlive/2014/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2014/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmr12.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmr8.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cms
+l12.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><
+c:/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive
+/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on demo.pdf (111 pages, 6909345 bytes).
 PDF statistics:
- 404 PDF objects out of 1000 (max. 8388607)
- 253 compressed objects within 3 object streams
+ 463 PDF objects out of 1000 (max. 8388607)
+ 284 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
- 106 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 141 words of extra memory for PDF output out of 10000 (max. 10000000)
 
