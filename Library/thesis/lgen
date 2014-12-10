@@ -1,7 +1,0 @@
-rm f.ps out.pdf
-latex thesis.tex
-bibtex thesis.aux
-dvips -of.ps -t letter thesis.dvi
-ps2pdf -oout.pdf f.ps
-#evince f.ps &
-#ps2pdf -oout.pdf -dPDFSETTINGS=/default f.ps
