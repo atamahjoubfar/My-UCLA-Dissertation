@@ -17,7 +17,7 @@
 \degreeyear     {2014}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+% They asked me to remove non-certifying commitee members.
 \chair          {Bahram Jalali}
 \member         {Tatsuo Itoh}
 \member         {Dean Ho}
@@ -29,21 +29,20 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\input {acknowledgments}
+\input {FrontBack/acknowledgments}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-% UCLA Policy on Vita
+% UCLA Policy on Vita:
 % For security reasons, UCLA policy specifies that your birth year and birth place should not be included in your vita.
-\input {vita}
+% The Vita including the publications should not be more than 2 pages.
+\input {FrontBack/vita}
+
+\input {FrontBack/publications}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\input {publications}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\input {abstract}
+\input {FrontBack/abstract}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -54,22 +53,19 @@
 %
 % Ordinarily each chapter (at least) is in a separate file.
 %
-\input {Introduction}                         % Chapter 1 of dissertation
+\input {FrontBack/Introduction}                         % Chapter 1 of dissertation
 \input {APL2011/APL2011}                         % Chapter 2
 \input {PW2013/PW2013}                         % etc.
 \input {BOE2013/BOE2013}
 \input {JOSAA2013/JOSAA2013}
 \input {CLEO2010/CLEO2010}
 \input {CLEO2015/CLEO2015}
-\input {Conclusion}
+\input {FrontBack/conclusion}
 
 %\bibliography {bib/network,bib/naming}    % bibliography references
 %\bibliographystyle {thesis}
 
-%\bibliographystyle {IEEEtran}
-%\bibliography {IEEEfull,DissertationBib} 
-
-\bibliography{DissertationBib}
+\bibliography{FrontBack/DissertationBib}
 \bibliographystyle{unsrt}
 
 \end {document}
